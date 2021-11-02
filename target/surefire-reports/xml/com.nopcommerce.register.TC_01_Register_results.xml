@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on FIREFOX"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.670">
+  <properties />
+  
+  
+            <testcase name="Register_04_Exist_Email" time="1.046" classname="com.nopcommerce.register.TC_01_Register" />
+                <testcase name="Register_05_InValid_Password" time="0.821" classname="com.nopcommerce.register.TC_01_Register" />
+                <testcase name="Register_06_Not_Match_Password" time="0.890" classname="com.nopcommerce.register.TC_01_Register" />
+                <testcase name="Register_02_Invalid_Email" time="1.070" classname="com.nopcommerce.register.TC_01_Register" />
+                <testcase name="Register_01_Empty_Data" time="1.084" classname="com.nopcommerce.register.TC_01_Register" />
+                <testcase name="Register_03_Valid_Infomation" time="5.759" classname="com.nopcommerce.register.TC_01_Register" />
+      
+</testsuite>

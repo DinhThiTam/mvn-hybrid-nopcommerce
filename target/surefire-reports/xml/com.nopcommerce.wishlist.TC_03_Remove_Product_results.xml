@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on FIREFOX"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="77.742">
+  <properties />
+  
+  
+            <testcase name="Remove_Product_01" time="77.742" classname="com.nopcommerce.wishlist.TC_03_Remove_Product" />
+      
+</testsuite>

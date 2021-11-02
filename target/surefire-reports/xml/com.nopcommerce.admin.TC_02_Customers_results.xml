@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on FIREFOX"
+           tests="9"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="202.413">
+  <properties />
+  
+  
+            <testcase name="TC_01_Create_New_Customer" time="36.878" classname="com.nopcommerce.admin.TC_02_Customers" />
+                <testcase name="TC_09_Delete_Address" time="21.927" classname="com.nopcommerce.admin.TC_02_Customers" />
+                <testcase name="TC_02_Search_Cusomer_With_Email" time="13.944" classname="com.nopcommerce.admin.TC_02_Customers" />
+                <testcase name="TC_08_Edit_Address" time="38.363" classname="com.nopcommerce.admin.TC_02_Customers" />
+                <testcase name="TC_03_Search_Cusomer_With_FirstName_LastName" time="15.056" classname="com.nopcommerce.admin.TC_02_Customers" />
+                <testcase name="TC_04_Search_Cusomer_With_Company" time="14.444" classname="com.nopcommerce.admin.TC_02_Customers" />
+                <testcase name="TC_06_Edit_Customer" time="23.378" classname="com.nopcommerce.admin.TC_02_Customers" />
+                <testcase name="TC_05_Search_Cusomer_With_Full_Data" time="15.552" classname="com.nopcommerce.admin.TC_02_Customers" />
+                <testcase name="TC_07_Add_New_Address" time="22.871" classname="com.nopcommerce.admin.TC_02_Customers" />
+      
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on FIREFOX"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="40.335">
+  <properties />
+  
+  
+            <testcase name="TC_06_Go_product_SKU" time="9.894" classname="com.nopcommerce.admin.TC_01_Catalog_Products" />
+                <testcase name="TC_03_Search_With_Product_Name_ParentsCatalogue_Checked" time="5.892" classname="com.nopcommerce.admin.TC_01_Catalog_Products" />
+                <testcase name="TC_01_Search_With_Product_Name" time="4.045" classname="com.nopcommerce.admin.TC_01_Catalog_Products" />
+                <testcase name="TC_02_Search_With_Product_Name_ParentsCatalogue_Unchecked" time="5.844" classname="com.nopcommerce.admin.TC_01_Catalog_Products" />
+                <testcase name="TC_04_Search_With_Product_Name_ChildCatalogue" time="7.298" classname="com.nopcommerce.admin.TC_01_Catalog_Products" />
+                <testcase name="TC_05_Search_With_Product_Name_Manufacturer" time="7.362" classname="com.nopcommerce.admin.TC_01_Catalog_Products" />
+      
+</testsuite>

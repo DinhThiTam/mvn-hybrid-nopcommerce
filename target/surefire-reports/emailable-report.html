@@ -1,0 +1,943 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">User_Nop Commerce</th></tr>
+<tr><td><a href="#t0">Run on FIREFOX</a></td><td class="num">15</td><td class="num">0</td><td class="num">0</td><td class="num">264,077</td><td></td><td></td></tr>
+<tr><th colspan="7">User_Nop Commerce (0)</th></tr>
+<tr class="stripe"><td><a href="#t1">Run on FIREFOX</a></td><td class="num">41</td><td class="num">0</td><td class="num attn">2</td><td class="num">1,076,298</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">56</th><th class="num">0</th><th class="num attn">2</th><th class="num">1,340,375</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">User_Nop Commerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on FIREFOX &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.nopcommerce.admin.TC_01_Catalog_Products</td><td><a href="#m0">TC_01_Search_With_Product_Name</a></td><td rowspan="1">1635848637947</td><td rowspan="1">4045</td></tr><tr class="passedeven"><td><a href="#m1">TC_02_Search_With_Product_Name_ParentsCatalogue_Unchecked</a></td><td rowspan="1">1635848642074</td><td rowspan="1">5844</td></tr><tr class="passedeven"><td><a href="#m2">TC_03_Search_With_Product_Name_ParentsCatalogue_Checked</a></td><td rowspan="1">1635848647920</td><td rowspan="1">5892</td></tr><tr class="passedeven"><td><a href="#m3">TC_04_Search_With_Product_Name_ChildCatalogue</a></td><td rowspan="1">1635848653813</td><td rowspan="1">7298</td></tr><tr class="passedeven"><td><a href="#m4">TC_05_Search_With_Product_Name_Manufacturer</a></td><td rowspan="1">1635848661112</td><td rowspan="1">7362</td></tr><tr class="passedeven"><td><a href="#m5">TC_06_Go_product_SKU</a></td><td rowspan="1">1635848668475</td><td rowspan="1">9894</td></tr><tr class="passedodd"><td rowspan="9">com.nopcommerce.admin.TC_02_Customers</td><td><a href="#m6">TC_01_Create_New_Customer</a></td><td rowspan="1">1635848686546</td><td rowspan="1">36878</td></tr><tr class="passedodd"><td><a href="#m7">TC_02_Search_Cusomer_With_Email</a></td><td rowspan="1">1635848723425</td><td rowspan="1">13944</td></tr><tr class="passedodd"><td><a href="#m8">TC_03_Search_Cusomer_With_FirstName_LastName</a></td><td rowspan="1">1635848737371</td><td rowspan="1">15056</td></tr><tr class="passedodd"><td><a href="#m9">TC_04_Search_Cusomer_With_Company</a></td><td rowspan="1">1635848752428</td><td rowspan="1">14444</td></tr><tr class="passedodd"><td><a href="#m10">TC_05_Search_Cusomer_With_Full_Data</a></td><td rowspan="1">1635848766872</td><td rowspan="1">15552</td></tr><tr class="passedodd"><td><a href="#m11">TC_06_Edit_Customer</a></td><td rowspan="1">1635848782425</td><td rowspan="1">23378</td></tr><tr class="passedodd"><td><a href="#m12">TC_07_Add_New_Address</a></td><td rowspan="1">1635848805804</td><td rowspan="1">22871</td></tr><tr class="passedodd"><td><a href="#m13">TC_08_Edit_Address</a></td><td rowspan="1">1635848828677</td><td rowspan="1">38363</td></tr><tr class="passedodd"><td><a href="#m14">TC_09_Delete_Address</a></td><td rowspan="1">1635848867040</td><td rowspan="1">21927</td></tr></tbody>
+<tbody><tr><th colspan="4">User_Nop Commerce (0)</th></tr></tbody><tbody id="t1"><tr><th colspan="4">Run on FIREFOX &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.nopcommerce.order.TC_06_Checkout_Order_Payment_Method_Cheque</td><td><a href="#m15">TC_01_Checkout_Method_Cheque</a></td><td rowspan="1">1635849881504</td><td rowspan="1">36477</td></tr><tr class="failedodd"><td rowspan="1">com.nopcommerce.order.TC_07_Re_Order</td><td><a href="#m16">TC_01_Re_Order</a></td><td rowspan="1">1635849928279</td><td rowspan="1">36875</td></tr><tr><th colspan="4">Run on FIREFOX &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.nopcommerce.login.TC_01_Login</td><td><a href="#m17">Login_01_Login_Empty_Data</a></td><td rowspan="1">1635848957590</td><td rowspan="1">566</td></tr><tr class="passedeven"><td><a href="#m18">Login_02_Login_Invalid_Email</a></td><td rowspan="1">1635848958157</td><td rowspan="1">574</td></tr><tr class="passedeven"><td><a href="#m19">Login_03_Login_Not_Register_Email</a></td><td rowspan="1">1635848958732</td><td rowspan="1">781</td></tr><tr class="passedeven"><td><a href="#m20">Login_04_Empty_Password</a></td><td rowspan="1">1635848959513</td><td rowspan="1">681</td></tr><tr class="passedeven"><td><a href="#m21">Login_05_Login_Invalid_Password</a></td><td rowspan="1">1635848960195</td><td rowspan="1">722</td></tr><tr class="passedeven"><td><a href="#m22">Login_06_Login_Success</a></td><td rowspan="1">1635848960917</td><td rowspan="1">2003</td></tr><tr class="passedodd"><td rowspan="1">com.nopcommerce.myaccount.TC_01_Customer_Info</td><td><a href="#m23">My_Account_01_Customer_Info</a></td><td rowspan="1">1635849400669</td><td rowspan="1">9237</td></tr><tr class="passedeven"><td rowspan="1">com.nopcommerce.myaccount.TC_02_Add_Addresses</td><td><a href="#m24">My_Account_02_Addresses</a></td><td rowspan="1">1635849418749</td><td rowspan="1">10139</td></tr><tr class="passedodd"><td rowspan="1">com.nopcommerce.myaccount.TC_03_Change_Password</td><td><a href="#m25">Change_Password_01</a></td><td rowspan="1">1635849439070</td><td rowspan="1">12619</td></tr><tr class="passedeven"><td rowspan="1">com.nopcommerce.myaccount.TC_04_My_Product_Review</td><td><a href="#m26">My_Product_Review_01</a></td><td rowspan="1">1635849458757</td><td rowspan="1">12213</td></tr><tr class="passedodd"><td rowspan="3">com.nopcommerce.order.TC_01_Add_Product_To_Cart</td><td><a href="#m27">TC_01_Add_Product_To_Cart</a></td><td rowspan="1">1635849645890</td><td rowspan="1">7004</td></tr><tr class="passedodd"><td><a href="#m28">TC_02_Edit_Product_To_Cart</a></td><td rowspan="1">1635849652894</td><td rowspan="1">22436</td></tr><tr class="passedodd"><td><a href="#m29">TC_03_Remove_from_Cart</a></td><td rowspan="1">1635849675331</td><td rowspan="1">67965</td></tr><tr class="passedeven"><td rowspan="1">com.nopcommerce.order.TC_02_Update_Shopping_Cart</td><td><a href="#m30">TC_01_Update_Shopping_Cart</a></td><td rowspan="1">1635849758133</td><td rowspan="1">13691</td></tr><tr class="passedodd"><td rowspan="1">com.nopcommerce.order.TC_05_Checkout_Order_Payment_Method_Card</td><td><a href="#m31">TC_01_Checkout_Order_Method_Card</a></td><td rowspan="1">1635849781821</td><td rowspan="1">92552</td></tr><tr class="passedeven"><td rowspan="6">com.nopcommerce.register.TC_01_Register</td><td><a href="#m32">Register_01_Empty_Data</a></td><td rowspan="1">1635848909855</td><td rowspan="1">1084</td></tr><tr class="passedeven"><td><a href="#m33">Register_02_Invalid_Email</a></td><td rowspan="1">1635848910941</td><td rowspan="1">1070</td></tr><tr class="passedeven"><td><a href="#m34">Register_03_Valid_Infomation</a></td><td rowspan="1">1635848912011</td><td rowspan="1">5759</td></tr><tr class="passedeven"><td><a href="#m35">Register_04_Exist_Email</a></td><td rowspan="1">1635848917772</td><td rowspan="1">1046</td></tr><tr class="passedeven"><td><a href="#m36">Register_05_InValid_Password</a></td><td rowspan="1">1635848918819</td><td rowspan="1">821</td></tr><tr class="passedeven"><td><a href="#m37">Register_06_Not_Match_Password</a></td><td rowspan="1">1635848919640</td><td rowspan="1">890</td></tr><tr class="passedodd"><td rowspan="8">com.nopcommerce.search.TC_01_Search_Advanced_Search</td><td><a href="#m38">Search_01_Empty_Data</a></td><td rowspan="1">1635849486265</td><td rowspan="1">5986</td></tr><tr class="passedodd"><td><a href="#m39">Search_02_Not_Exist_Data</a></td><td rowspan="1">1635849492251</td><td rowspan="1">646</td></tr><tr class="passedodd"><td><a href="#m40">TC_03_Product_Name_Relative</a></td><td rowspan="1">1635849492898</td><td rowspan="1">1695</td></tr><tr class="passedodd"><td><a href="#m41">TC_04_Product_Name_Absolute</a></td><td rowspan="1">1635849494594</td><td rowspan="1">1367</td></tr><tr class="passedodd"><td><a href="#m42">TC_05_Parent_Categories</a></td><td rowspan="1">1635849495961</td><td rowspan="1">2513</td></tr><tr class="passedodd"><td><a href="#m43">TC_06_Product_Sub_Categories</a></td><td rowspan="1">1635849498474</td><td rowspan="1">2185</td></tr><tr class="passedodd"><td><a href="#m44">TC_07_Incorrect_Manufactuner</a></td><td rowspan="1">1635849500660</td><td rowspan="1">2557</td></tr><tr class="passedodd"><td><a href="#m45">TC_08_Correct_Manufactuner</a></td><td rowspan="1">1635849503217</td><td rowspan="1">2419</td></tr><tr class="passedeven"><td rowspan="7">com.nopcommerce.sort.TC_01_Sort_Display_Paging</td><td><a href="#m46">TC_01_Sort_By_Name_A_Z</a></td><td rowspan="1">1635849511394</td><td rowspan="1">2379</td></tr><tr class="passedeven"><td><a href="#m47">TC_02_Sort_By_Name_Z_A</a></td><td rowspan="1">1635849513773</td><td rowspan="1">2369</td></tr><tr class="passedeven"><td><a href="#m48">TC_03_Sort_By_Price_Low_To_Hight</a></td><td rowspan="1">1635849516143</td><td rowspan="1">2396</td></tr><tr class="passedeven"><td><a href="#m49">TC_04_Sort_By_Price_Hight_To_Low</a></td><td rowspan="1">1635849518540</td><td rowspan="1">2403</td></tr><tr class="passedeven"><td><a href="#m50">TC_05_Display_Three_Per_Page</a></td><td rowspan="1">1635849520943</td><td rowspan="1">3521</td></tr><tr class="passedeven"><td><a href="#m51">TC_06_Display_Six_Per_Page</a></td><td rowspan="1">1635849524464</td><td rowspan="1">68492</td></tr><tr class="passedeven"><td><a href="#m52">TC_07_Display_Nine_Per_Page</a></td><td rowspan="1">1635849592957</td><td rowspan="1">38550</td></tr><tr class="passedodd"><td rowspan="1">com.nopcommerce.wishlist.TC_01_Add_To_Wishlist</td><td><a href="#m53">Wishlist_01_Add_To_Wishlist</a></td><td rowspan="1">1635848935471</td><td rowspan="1">8837</td></tr><tr class="passedeven"><td rowspan="1">com.nopcommerce.wishlist.TC_02_Add_To_Cart</td><td><a href="#m54">Add_To_Cart_01</a></td><td rowspan="1">1635848975008</td><td rowspan="1">10996</td></tr><tr class="passedodd"><td rowspan="1">com.nopcommerce.wishlist.TC_03_Remove_Product</td><td><a href="#m55">Remove_Product_01</a></td><td rowspan="1">1635849001294</td><td rowspan="1">77742</td></tr><tr class="passedeven"><td rowspan="1">com.nopcommerce.wishlist.TC_04_Add_To_Compare</td><td><a href="#m56">Add_To_Compare_01</a></td><td rowspan="1">1635849093564</td><td rowspan="1">262886</td></tr><tr class="passedodd"><td rowspan="1">com.nopcommerce.wishlist.TC_05_Recently_Viewed_Product</td><td><a href="#m57">Add_To_Cart_01</a></td><td rowspan="1">1635849370549</td><td rowspan="1">14890</td></tr></tbody>
+</table>
+<h2>Run on FIREFOX</h2><h3 id="m0">com.nopcommerce.admin.TC_01_Catalog_Products#TC_01_Search_With_Product_Name</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:23:57,990] TC_01 - Step 01: Open sub menu 'Product'
+<br><br/>[INFO ] [2021-11-02 17:24:00,540] TC_01 - Step 02: Expand Panel 'Search'
+<br><br/>[INFO ] [2021-11-02 17:24:00,616] TC_01 - Step 03: Enter to 'Product name' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:00,757] TC_01 - Step 04: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:24:01,615] TC_01 - Step 05: Verify only one item is displayed in table
+<br><br/>[INFO ] [2021-11-02 17:24:01,684]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:01,744]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:01,807]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:01,868]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:01,992]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nopcommerce.admin.TC_01_Catalog_Products#TC_02_Search_With_Product_Name_ParentsCatalogue_Unchecked</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:24:02,075] TC_02 - Step 01: Refresh page
+<br><br/>[INFO ] [2021-11-02 17:24:05,961] TC_02 - Step 02: Enter to 'Product name' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:06,085] TC_02 - Step 03: Select item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:24:06,424] TC_02 - Step 03: Uncheck to checkbox
+<br><br/>[INFO ] [2021-11-02 17:24:06,476] TC_02 - Step 04: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:24:06,761] TC_02 - Step 05: Verify 'No data available in table' message is dispayed 
+<br><br/>[INFO ] [2021-11-02 17:24:07,918]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.nopcommerce.admin.TC_01_Catalog_Products#TC_03_Search_With_Product_Name_ParentsCatalogue_Checked</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:24:07,921] TC_03 - Step 01: Refresh page
+<br><br/>[INFO ] [2021-11-02 17:24:11,681] TC_03 - Step 02: Enter to 'Product name' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:11,804] TC_03 - Step 03: Select item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:24:12,190] TC_03 - Step 04: Check to 'Search subcategories' checkbox
+<br><br/>[INFO ] [2021-11-02 17:24:12,520] TC_03 - Step 05: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:24:13,368] TC_03 - Step 06: Verify only one item is displayed in table
+<br><br/>[INFO ] [2021-11-02 17:24:13,436]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:13,498]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:13,599]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:13,653]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:13,812]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.nopcommerce.admin.TC_01_Catalog_Products#TC_04_Search_With_Product_Name_ChildCatalogue</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:24:13,814] TC_04 - Step 01: Refresh page
+<br><br/>[INFO ] [2021-11-02 17:24:18,776] TC_04 - Step 02: Enter to 'Product name' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:18,901] TC_04 - Step 03: Select to Child Category in dropdown
+<br><br/>[INFO ] [2021-11-02 17:24:19,208] TC_04 - Step 04: Uncheck to 'Search subcategories' checkbox
+<br><br/>[INFO ] [2021-11-02 17:24:19,323] TC_04 - Step 05: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:24:20,701] TC_04 - Step 06: Verify only one item is displayed in table
+<br><br/>[INFO ] [2021-11-02 17:24:20,769]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:20,832]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:20,927]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:20,985]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:21,111]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.nopcommerce.admin.TC_01_Catalog_Products#TC_05_Search_With_Product_Name_Manufacturer</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:24:21,113] TC_05 - Step 01: Refresh page
+<br><br/>[INFO ] [2021-11-02 17:24:25,917] TC_05 - Step 02: Enter to 'Product name' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:26,040] TC_05 - Step 03: Select to Category in dropdown
+<br><br/>[INFO ] [2021-11-02 17:24:26,119] TC_05 - Step 04: Uncheck to 'Search subcategories' checkbox
+<br><br/>[INFO ] [2021-11-02 17:24:26,164] TC_05 - Step 05: Select to Manufacturer dropdown
+<br><br/>[INFO ] [2021-11-02 17:24:26,505] TC_05 - Step 06: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:24:28,404] TC_05 - Step 07: Verify only one item is displayed in table
+<br><br/>[INFO ] [2021-11-02 17:24:28,474]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.nopcommerce.admin.TC_01_Catalog_Products#TC_06_Go_product_SKU</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:24:28,476] TC_06 - Step 01: Refresh page
+<br><br/>[INFO ] [2021-11-02 17:24:32,871] TC_06 - Step 02: Enter to 'Go directly to product' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:32,997] TC_06 - Step 03: Click to 'Go' button
+<br><br/>[INFO ] [2021-11-02 17:24:38,247] TC_06 - Step 04: Verify Title product details page is displayed
+<br><br/>[INFO ] [2021-11-02 17:24:38,312]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:38,312] TC_06 - Step 05: Verify product info is displayed
+<br><br/>[INFO ] [2021-11-02 17:24:38,369]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.nopcommerce.admin.TC_02_Customers#TC_01_Create_New_Customer</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:24:46,550] TC_01 - Step 01: Open sub menu 'Customers'
+<br><br/>[INFO ] [2021-11-02 17:24:48,589] TC_01 - Step 02: Click to 'Add new' button
+<br><br/>[INFO ] [2021-11-02 17:24:50,310] TC_01 - Step 03: Enter to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:50,437] TC_01 - Step 04: Enter to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:50,536] TC_01 - Step 05: Enter to 'Firstname' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:50,644] TC_01 - Step 06: Enter to 'Lastname' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:50,763] TC_01 - Step 07: Click to 'Male' radio button
+<br><br/>[INFO ] [2021-11-02 17:24:51,051] TC_01 - Step 08: Enter to 'Date of birth' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:51,152] TC_01 - Step 09: Enter to 'Company name' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:53,259] TC_01 - Step 10: Clear text in dropdown
+<br><br/>[INFO ] [2021-11-02 17:24:55,533] TC_01 - Step 11: Select 'Guest' role in dropdown
+<br><br/>[INFO ] [2021-11-02 17:24:59,125] TC_01 - Step 12: Click to 'Active' checkbox
+<br><br/>[INFO ] [2021-11-02 17:24:59,174] TC_01 - Step 13: Verify 'Guests' role is selected
+<br><br/>[INFO ] [2021-11-02 17:24:59,233]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:24:59,233] TC_01 - Step 14: Enter to 'Admin comment' textbox
+<br><br/>[INFO ] [2021-11-02 17:24:59,342] TC_01 - Step 15: Click to 'Save and Continue Edit' button
+<br><br/>[INFO ] [2021-11-02 17:25:08,097] TC_01 - Step 16: Verify success mesage
+<br><br/>[INFO ] [2021-11-02 17:25:08,435] TC_01 - Step 17: Click to expand panel
+<br><br/>[INFO ] [2021-11-02 17:25:08,491] TC_01 - Step 18: Verify customers info are displayed 
+<br><br/>[INFO ] [2021-11-02 17:25:08,583]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:08,645]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:08,728]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:08,769]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:08,847]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:08,909]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:08,958]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:08,958] TC_01 - Step 19: Click to 'Back to customer list' button
+<br><br/>[INFO ] [2021-11-02 17:25:13,599] TC_01 - Step 20: Clear 'Customer roles' droplist
+<br><br/>[INFO ] [2021-11-02 17:25:15,900] TC_01 - Step 21: Select 'Guests' item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:25:22,526] TC_01 - Step 22: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:25:23,362] TC_01 - Step 23: Verify customer info in table is displayed
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.nopcommerce.admin.TC_02_Customers#TC_02_Search_Cusomer_With_Email</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:25:23,426] TC_02 - Step 01: Refresh page
+<br><br/>[INFO ] [2021-11-02 17:25:26,711] TC_02 - Step 02: Enter to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:25:26,846] TC_02 - Step 03: Clear 'Customer roles' list
+<br><br/>[INFO ] [2021-11-02 17:25:29,129] TC_02 - Step 04: Select 'Guests' item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:25:35,723] TC_02 - Step 05: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:25:37,093] TC_02 - Step 06: Verify 'Email' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:25:37,161]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:37,161] TC_02 - Step 07: Verify 'Name' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:25:37,220]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:37,220] TC_02 - Step 08: Verify 'Guests' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:25:37,284]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:37,284] TC_02 - Step 09: Verify 'Company' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:25:37,369]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.nopcommerce.admin.TC_02_Customers#TC_03_Search_Cusomer_With_FirstName_LastName</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:25:37,373] TC_03 - Step 01: Refresh page
+<br><br/>[INFO ] [2021-11-02 17:25:41,628] TC_03 - Step 02: Enter to 'First Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:25:41,748] TC_03 - Step 03: Enter to 'Last Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:25:41,836] TC_03 - Step 04: Clear 'Customer roles' list
+<br><br/>[INFO ] [2021-11-02 17:25:44,130] TC_03 - Step 05: Select 'Guests' item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:25:50,754] TC_03 - Step 06: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:25:52,156] TC_03 - Step 07: Verify 'Email' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:25:52,222]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:52,222] TC_03 - Step 08: Verify 'Name' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:25:52,283]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:52,283] TC_03 - Step 09: Verify 'Customer roles' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:25:52,362]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:25:52,363] TC_03 - Step 10: Verify 'Company name' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:25:52,427]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.nopcommerce.admin.TC_02_Customers#TC_04_Search_Cusomer_With_Company</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:25:52,429] TC_04 - Step 01: Refresh page
+<br><br/>[INFO ] [2021-11-02 17:25:56,640] TC_04 - Step 02: Enter to 'Company Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:25:56,782] TC_04 - Step 03: Clear 'Customer roles' list
+<br><br/>[INFO ] [2021-11-02 17:25:59,079] TC_04 - Step 04: Select 'Guests' item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:26:05,743] TC_04 - Step 05: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:26:06,605] TC_04 - Step 06: Verify 'Email' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:06,670]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:26:06,670] TC_04 - Step 07: Verify 'Name' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:06,733]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:26:06,733] TC_04 - Step 08: Verify 'Customer rolesl' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:06,794]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:26:06,794] TC_04 - Step 09: Verify 'Company name'' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:06,871]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.nopcommerce.admin.TC_02_Customers#TC_05_Search_Cusomer_With_Full_Data</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:26:06,873] TC_05 - Step 01: Refresh page
+<br><br/>[INFO ] [2021-11-02 17:26:11,345] TC_05 - Step 02: Enter to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:11,454] TC_05 - Step 03: Enter to 'First Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:11,555] TC_05 - Step 04: Enter to 'Last Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:11,648] TC_05 - Step 05: Enter to 'Month of Birth' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:11,949] TC_05 - Step 06: Enter to 'Day of Birth' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:12,276] TC_05 - Step 07: Enter to 'Company Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:12,387] TC_05 - Step 08: Clear 'Customer roles' list
+<br><br/>[INFO ] [2021-11-02 17:26:14,675] TC_05 - Step 09: Select 'Guests' item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:26:21,282] TC_05 - Step 10: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:26:22,152] TC_05 - Step 11: Verify 'Email' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:22,237]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:26:22,237] TC_05 - Step 12: Verify 'Name' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:22,299]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:26:22,299] TC_05 - Step 13: Verify 'Customer roles' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:22,361]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:26:22,361] TC_05 - Step 14: Verify 'Company name' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:22,424]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.nopcommerce.admin.TC_02_Customers#TC_06_Edit_Customer</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:26:22,425] TC_06 - Step 01: Click to 'Edit' button in table
+<br><br/>[INFO ] [2021-11-02 17:26:28,778] TC_06 - Step 02: Enter to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:28,905] TC_06 - Step 03: Enter to 'First Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:29,001] TC_06 - Step 04: Enter to 'Last Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:29,098] TC_06 - Step 05: Enter to 'Date of Birth' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:29,240] TC_06 - Step 06: Enter to 'Company Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:29,335] TC_06 - Step 06: Enter to 'Comment Admin' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:29,443] TC_06 - Step 07: Click to 'Save' button
+<br><br/>[INFO ] [2021-11-02 17:26:31,610] TC_06 - Step 08: Verify success message is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:31,679] TC_06 - Step 09: Enter to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:34,809] TC_06 - Step 10: Enter to 'First Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:34,909] TC_06 - Step 11: Enter to 'Last Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:35,000] TC_06 - Step 12: Enter to 'Month of Birth' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:35,337] TC_06 - Step 13: Enter to 'Day of Birth' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:35,699] TC_06 - Step 14: Enter to 'Company Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:26:35,808] TC_06 - Step 15: Clear 'Customer roles' list
+<br><br/>[INFO ] [2021-11-02 17:26:38,099] TC_06 - Step 16: Select 'Guests' item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:26:44,707] TC_06 - Step 17: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:26:45,551] TC_06 - Step 18: Verify 'Email' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:45,616]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:26:45,616] TC_06 - Step 19: Verify 'Name' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:45,676]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:26:45,676] TC_06 - Step 20: Verify 'Guests' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:45,737]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:26:45,737] TC_06 - Step 21: Verify 'Company name' info in table is displayed
+<br><br/>[INFO ] [2021-11-02 17:26:45,803]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.nopcommerce.admin.TC_02_Customers#TC_07_Add_New_Address</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:26:45,805] TC_07 - Step 01: Click to 'Edit' button in table
+<br><br/>[INFO ] [2021-11-02 17:26:46,447] TC_07 - Step 02: Click to Expand panel in 'Addresses' form
+<br><br/>[INFO ] [2021-11-02 17:26:52,837] TC_07 - Step 3: Click to 'Add new Address' button
+<br><br/>[INFO ] [2021-11-02 17:26:55,377] TC_07 - Step 04: Update First name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:26:55,482] TC_07 - Step 05: Update Last name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:26:55,591] TC_07 - Step 06: Update Email information to textbox
+<br><br/>[INFO ] [2021-11-02 17:26:55,706] TC_07 - Step 07: Update Company name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:26:55,803] TC_07 - Step 08: Update Country name information to dropdown
+<br><br/>[INFO ] [2021-11-02 17:26:56,132] TC_07 - Step 09: Update State province information to dropdown
+<br><br/>[INFO ] [2021-11-02 17:26:56,213] TC_07 - Step 10: Update Company City name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:26:56,309] TC_07 - Step 11: Update Address 1 information to textbox
+<br><br/>[INFO ] [2021-11-02 17:26:56,408] TC_07 - Step 12: Update Address 2 information to textbox
+<br><br/>[INFO ] [2021-11-02 17:26:56,502] TC_07 - Step 13: Update Zip code information to textbox
+<br><br/>[INFO ] [2021-11-02 17:26:56,607] TC_07 - Step 14: Update Phone number information to textbox
+<br><br/>[INFO ] [2021-11-02 17:26:56,702] TC_07 - Step 15: Update Phone number information to textbox
+<br><br/>[INFO ] [2021-11-02 17:26:56,797] TC_07 - Step 16: Click to 'Save' button
+<br><br/>[INFO ] [2021-11-02 17:26:59,488] TC_07 - Step 17: Verify success mesage
+<br><br/>[INFO ] [2021-11-02 17:27:02,569] TC_07 - Step 18: Verify Firstname infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:02,635]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:02,635] ATC_07 - Step 19: Verify Lastname infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:02,699]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:02,699] TC_07 - Step 20: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:02,760]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:02,760] TC_07 - Step 21: Verify company name infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:02,824]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:02,824] TC_07 - Step 22: Verify country name infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:03,280]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:03,280] TC_07 - Step 23: Update State province information to dropdown
+<br><br/>[INFO ] [2021-11-02 17:27:03,365]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:03,365] TC_07 - Step 24: Verify city name infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:03,425]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:03,425] TC_07 - Step 25: Verify address1 infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:03,487]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:03,487] TC_07 - Step 26: Verify address2 infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:03,549]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:03,549] TC_07 - Step 27: Verify zip code infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:03,612]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:03,612] TC_07 - Step 28: Verify phone number infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:03,674]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:03,674] TC_07 - Step 29: Verify fax number infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:03,735]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:06,738] TC_07 - Step 30: Click to 'Back to customer details' button
+<br><br/>[INFO ] [2021-11-02 17:27:08,495] TC_07 - Step 31: Click to Expand panel in 'Addresses' form
+<br><br/>[INFO ] [2021-11-02 17:27:08,561] TC_07 - Step 32: Verify  displayed customer info in table
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.nopcommerce.admin.TC_02_Customers#TC_08_Edit_Address</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:27:08,678] TC_08 - Step 01: Click to 'Back to customer list' button
+<br><br/>[INFO ] [2021-11-02 17:27:15,226] TC_08 - Step 02: Edit 'Email address' textbox
+<br><br/>[INFO ] [2021-11-02 17:27:15,340] TC_08 - Step 03: Edit 'First name' textbox
+<br><br/>[INFO ] [2021-11-02 17:27:15,437] TC_08 - Step 04: Edit 'Last name' textbox
+<br><br/>[INFO ] [2021-11-02 17:27:15,532] TC_08 - Step 05: Select 'Month of birth' item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:27:15,832] TC_08 - Step 06: Select 'Day of birth' item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:27:16,162] TC_08 - Step 07: Edit 'Company name' textbox
+<br><br/>[INFO ] [2021-11-02 17:27:16,273] TC_08 - Step 08: Clear 'Customer roles' list
+<br><br/>[INFO ] [2021-11-02 17:27:18,560] TC_08 - Step 09: Select 'Guests' item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:27:25,153] TC_08 - Step 10: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:27:26,027] TC_08 - Step 11: Click to 'Edit' button in table
+<br><br/>[INFO ] [2021-11-02 17:27:28,091] TC_08 - Step 12: Click to Expand panel in 'Addresses' form
+<br><br/>[INFO ] [2021-11-02 17:27:31,240] TC_08 - Step 13: Click to 'Edit' button in table
+<br><br/>[INFO ] [2021-11-02 17:27:34,774] TC_08 - Step 14: Update First name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:34,877] TC_08 - Step 15: Update Last name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:35,018] TC_08 - Step 16: Update Email information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:35,140] TC_08 - Step 17: Update Company name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:35,257] TC_08 - Step 18: Update Country name information to dropdown
+<br><br/>[INFO ] [2021-11-02 17:27:35,561] TC_08 - Step 19: Update Company City name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:35,686] TC_08 - Step 20: Update Address 1 information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:35,783] TC_08 - Step 21: Update Address 2 information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:35,916] TC_08 - Step 22: Update Zip code information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:36,015] TC_08 - Step 23: Update Phone number information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:36,116] TC_08 - Step 24: Update Phone number information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:36,224] TC_08 - Step 25: Click to 'Save' button
+<br><br/>[INFO ] [2021-11-02 17:27:37,747] TC_08 - Step 26: Verify success message is displayed
+<br><br/>[INFO ] [2021-11-02 17:27:40,817] TC_08 - Step 27: Verify Firstname infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:40,884]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:40,884] TC_08 - Step 28: Verify Lastname infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:40,944]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:40,944] TC_08 - Step 29: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:41,007]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:41,007] TC_08 - Step 30: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:41,070]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:41,071] TC_08 - Step 31: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:41,194]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:41,194] TC_08 - Step 32: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:41,287]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:41,287] TC_08 - Step 33: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:41,350]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:41,350] TC_08 - Step 34: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:41,413]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:41,413] TC_08 - Step 35: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:41,474]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:41,474] TC_08 - Step 36: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:41,554]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:41,554] TC_08 - Step 37: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:41,615]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:41,616] TC_08 - Step 39: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:27:41,694]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:27:44,697] TC_08 - Step 40: Click 'back to customer details' button
+<br><br/>[INFO ] [2021-11-02 17:27:46,893] TC_08 - Step 41: Click to Expand panel in 'Addresses' form
+<br><br/>[INFO ] [2021-11-02 17:27:46,971] TC_08 - Step 42: Verify success message is displayed
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.nopcommerce.admin.TC_02_Customers#TC_09_Delete_Address</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:27:47,041] TC_09 - Step 01: Click to 'back to customer list' button
+<br><br/>[INFO ] [2021-11-02 17:27:53,616] TC_09 - Step 02: Update email information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:53,728] TC_09 - Step 03: Update first name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:53,824] TC_09 - Step 04: Update lastname information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:53,918] TC_09 - Step 05: Update month of birth information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:54,222] TC_09 - Step 06: Update day of birth information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:54,550] TC_09 - Step 07: Update company name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:27:54,655] TC_06 - Step 08: Clear 'Customer roles' list
+<br><br/>[INFO ] [2021-11-02 17:27:56,931] TC_09 - Step 09: Select 'Guests' item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:28:03,572] TC_09 - Step 10: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:28:04,413] TC_09 - Step 11: Click to 'Edit' button in table
+<br><br/>[INFO ] [2021-11-02 17:28:06,614] TC_09 - Step 12: Click to Expand panel in 'Addresses' form
+<br><br/>[INFO ] [2021-11-02 17:28:06,809] TC_09 - Step 13: Accept alert
+<br><br/>[INFO ] [2021-11-02 17:28:08,863] TC_09 - Step 14: Verify message in table is displayed
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Run on FIREFOX</h2><h3 id="m15">com.nopcommerce.order.TC_06_Checkout_Order_Payment_Method_Cheque#TC_01_Checkout_Method_Cheque</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:44:41,505] TC_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>[INFO ] [2021-11-02 17:44:42,322] TC_01 - Step 02: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:44:43,486] TC_01 - Step 03:Click to 'Add to cart' button
+<br><br/>[INFO ] [2021-11-02 17:44:44,263] TC_01 - Step 04: Open 'Shopping cart' menu
+<br><br/>[INFO ] [2021-11-02 17:44:44,892] TC_01 - Step 05:Click to 'Estimate shipping' button
+<br><br/>[INFO ] [2021-11-02 17:44:47,661] TC_01 - Step 06:Select to 'Country name' in dropdown
+<br><br/><br><a target="_blank" href="file:///F:\Autotest\AutomationFC\04-MavenFramework/screenshotReportNG/TC_01_Checkout_Method_Cheque_02_11_2021_05_45_17.png"><img src="file:///F:\Autotest\AutomationFC\04-MavenFramework/screenshotReportNG/TC_01_Checkout_Method_Cheque_02_11_2021_05_45_17.png" height='100' width='150'/> </a></br></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //select[@name=&apos;CountryId&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E6N9TK3&apos;, ip: &apos;192.168.1.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 12252, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7850dd01-3b92-46a2-a931-dcd7b608baa9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementClickable(BasePage.java:587)
+	at commons.BasePage.selectItemInDropdownByName(BasePage.java:647)
+	at com.nopcommerce.order.TC_06_Checkout_Order_Payment_Method_Cheque.TC_01_Checkout_Method_Cheque(TC_06_Checkout_Order_Payment_Method_Cheque.java:102)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.nopcommerce.order.TC_07_Re_Order#TC_01_Re_Order</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:45:28,280] TC_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>[INFO ] [2021-11-02 17:45:29,051] TC_01 - Step 02: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:45:30,172] TC_01 - Step 03:Click to 'Add to cart' button
+<br><br/>[INFO ] [2021-11-02 17:45:30,965] TC_01 - Step 04: Open 'Shopping cart' menu
+<br><br/>[INFO ] [2021-11-02 17:45:32,468] TC_01 - Step 05:Click to 'Estimate shipping' button
+<br><br/>[INFO ] [2021-11-02 17:45:34,846] TC_01 - Step 06:Select to 'Country name' in dropdown
+<br><br/><br><a target="_blank" href="file:///F:\Autotest\AutomationFC\04-MavenFramework/screenshotReportNG/TC_01_Re_Order_02_11_2021_05_46_05.png"><img src="file:///F:\Autotest\AutomationFC\04-MavenFramework/screenshotReportNG/TC_01_Re_Order_02_11_2021_05_46_05.png" height='100' width='150'/> </a></br></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //select[@name=&apos;CountryId&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E6N9TK3&apos;, ip: &apos;192.168.1.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 22484, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 28ac90a1-3862-4c9b-860f-81dc4986cbff
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementClickable(BasePage.java:587)
+	at commons.BasePage.selectItemInDropdownByName(BasePage.java:647)
+	at com.nopcommerce.order.TC_07_Re_Order.TC_01_Re_Order(TC_07_Re_Order.java:105)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.nopcommerce.login.TC_01_Login#Login_01_Login_Empty_Data</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:29:17,591] Login_01 - Step 01: Enter empty info to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:17,683] Login_01 - Step 02: Enter empty info to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:17,793] Login_01 - Step 03: Click to 'Login' button
+<br><br/>[INFO ] [2021-11-02 17:29:18,088] Login_01 - Step 04: Verify error messages is displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:29:18,156]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.nopcommerce.login.TC_01_Login#Login_02_Login_Invalid_Email</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:29:18,158] Login_02 - Step 01: Enter invalid email to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:18,252] Login_02 - Step 02: Enter invalid password to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:18,408] Login_02 - Step 03: Click to 'Login' button
+<br><br/>[INFO ] [2021-11-02 17:29:18,671] Login_02 - Step 04: Verify error messages is displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:29:18,731]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.nopcommerce.login.TC_01_Login#Login_03_Login_Not_Register_Email</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:29:18,733] Login_03 - Step 01: Enter an unregistered email to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:18,836] Login_03 - Step 02: Enter valid password to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:18,950] Login_03 - Step 03: Click to 'Login' button
+<br><br/>[INFO ] [2021-11-02 17:29:19,413] Login_03 - Step 04: Verify error messages is displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:29:19,513]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.nopcommerce.login.TC_01_Login#Login_04_Empty_Password</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:29:19,514] Login_04 - Step 01: Enter valid email to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:19,610] Login_04 - Step 02: Enter empty password to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:19,713] Login_04 - Step 03: Click to 'Login' button
+<br><br/>[INFO ] [2021-11-02 17:29:20,129] Login_04 - Step 04: Verify error messages is displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:29:20,194]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.nopcommerce.login.TC_01_Login#Login_05_Login_Invalid_Password</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:29:20,195] Login_05 - Step 01: Enter valid email to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:20,294] Login_05 - Step 02: Enter invalid password to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:20,381] Login_05 - Step 03: Click to 'Login' button
+<br><br/>[INFO ] [2021-11-02 17:29:20,828] Login_05 - Step 04: Verify error messages is displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:29:20,917]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.nopcommerce.login.TC_01_Login#Login_06_Login_Success</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:29:20,918] Login_06 - Step 01: Enter valid email to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:21,029] Login_06 - Step 02: Enter valid password to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:29:21,163] Login_06 - Step 03: Click to 'Login' button
+<br><br/>[INFO ] [2021-11-02 17:29:22,841] Login_06 - Step 04: Verify Logout link is displayed on header
+<br><br/>[INFO ] [2021-11-02 17:29:22,919]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">com.nopcommerce.myaccount.TC_01_Customer_Info#My_Account_01_Customer_Info</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:36:40,669] My_Account_01 - Step 01: Open 'My account' page on header
+<br><br/>[INFO ] [2021-11-02 17:36:42,038] My_Account_01 - Step 02: Open 'Customer Info' form
+<br><br/>[INFO ] [2021-11-02 17:36:45,068] My_Account_01 - Step 03: Update Gender information 'Female' to radio button
+<br><br/>[INFO ] [2021-11-02 17:36:45,380] My_Account_01 - Step 04: Update First name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:36:45,481] My_Account_01 - Step 06: Update Last name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:36:45,571] My_Account_01 - Step 06: Update Date of birthday information to dropdown
+<br><br/>[INFO ] [2021-11-02 17:36:46,532] My_Account_01 - Step 07: Update Email information to textbox
+<br><br/>[INFO ] [2021-11-02 17:36:46,641] My_Account_01 - Step 08: Update Company name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:36:46,745] My_Account_01 - Step 09: Click to 'Save' button
+<br><br/>[INFO ] [2021-11-02 17:36:49,238] My_Account_01 - Step 10: Verify gender infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:36:49,280]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:36:49,280] My_Account_01 - Step 11: Verify firstname infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:36:49,342]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:36:49,342] My_Account_01 - Step 12: Verify lastname infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:36:49,406]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:36:49,406] My_Account_01 - Step 13: Verify date of birth infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:36:49,494]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:36:49,568]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:36:49,781]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:36:49,781] My_Account_01 - Step 14: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:36:49,843]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:36:49,843] My_Account_01 - Step 15: Verify company name infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:36:49,906]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.nopcommerce.myaccount.TC_02_Add_Addresses#My_Account_02_Addresses</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:36:58,750] My_Account_01 - Step 01: Open 'My account' page on header
+<br><br/>[INFO ] [2021-11-02 17:37:00,018] My_Account_01 - Step 02: Open 'Addresses' form
+<br><br/>[INFO ] [2021-11-02 17:37:03,040] Add_Address_01 - Step 03: Click to 'Add new' button
+<br><br/>[INFO ] [2021-11-02 17:37:04,263] Add_Address_01 - Step 04: Update First name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:04,358] Add_Address_01 - Step 05: Update Last name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:04,463] Add_Address_01 - Step 06: Update Email information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:04,561] Add_Address_01 - Step 07: Update Company name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:04,666] Add_Address_01 - Step 08: Update Country name information to dropdown
+<br><br/>[INFO ] [2021-11-02 17:37:06,062] Add_Address_01 - Step 09: Update State province information to dropdown
+<br><br/>[INFO ] [2021-11-02 17:37:06,172]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:06,173] Add_Address_01 - Step 10: Update Company City name information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:06,263] Add_Address_01 - Step 11: Update Address 1 information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:06,365] Add_Address_01 - Step 12: Update Address 2 information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:06,475] Add_Address_01 - Step 13: Update Zip code information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:06,576] Add_Address_01 - Step 14: Update Phone number information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:06,675] Add_Address_01 - Step 15: Click to 'Save' button
+<br><br/>[INFO ] [2021-11-02 17:37:08,484] Add_Address_01 - Step 16: Verify full name infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:37:08,533]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:08,533] Add_Address_01 - Step 17: Verify email infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:37:08,581]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:08,581] Add_Address_01 - Step 18: Verify phone number infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:37:08,625]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:08,626] Add_Address_01 - Step 19: Verify company name infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:37:08,705]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:08,705] Add_Address_01 - Step 20: Verify adress 1 infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:37:08,748]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:08,748] Add_Address_01 - Step 21: Verify adress 2 infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:37:08,795]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:08,795] Add_Address_01 - Step 22: Verify country name infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:37:08,843]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:08,843] Add_Address_01 - Step 23: Verify city state zip infomation is updated successfully
+<br><br/>[INFO ] [2021-11-02 17:37:08,888]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.nopcommerce.myaccount.TC_03_Change_Password#Change_Password_01</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:37:19,071] Change_Password_01 - Step 01: Open 'My account' page on header
+<br><br/>[INFO ] [2021-11-02 17:37:19,518] Change_Password_01 - Step 02: Open 'Change password' form
+<br><br/>[INFO ] [2021-11-02 17:37:22,558] Change_Password_01 - Step 03: Enter Old Password information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:22,663] Change_Password_01 - Step 04: Update New Password information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:22,766] Change_Password_01 - Step 05: Update Confirm New Password information to textbox
+<br><br/>[INFO ] [2021-11-02 17:37:22,866] Change_Password_01 - Step 06: Click to 'Change Password' button
+<br><br/>[INFO ] [2021-11-02 17:37:23,363] Change_Password_01 - Step 07: Verify success message is displayed
+<br><br/>[INFO ] [2021-11-02 17:37:23,425]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:23,425] Change_Password_01 - Step 08: Click to 'x' icon
+<br><br/>[INFO ] [2021-11-02 17:37:26,688] Change_Password_01 - Step 09: Click to 'Log out' button
+<br><br/>[INFO ] [2021-11-02 17:37:29,419] Change_Password_01- Step 10: Click to 'Log in' button
+<br><br/>[INFO ] [2021-11-02 17:37:29,864] Change_Password_01 - Step 11: Enter email address to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:37:29,963] Change_Password_01 - Step 12: Enter old password to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:37:30,058] Change_Password_01 - Step 13: Click to 'Login' button
+<br><br/>[INFO ] [2021-11-02 17:37:30,512] Change_Password_01 - Step 14: Verify error messages is displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:37:30,570]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:30,571] Change_Password_01 - Step 15: Enter email address to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:37:30,689] Change_Password_01 - Step 16: Enter new password to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:37:30,807] Change_Password_01 - Step 17: Click to 'Login' button
+<br><br/>[INFO ] [2021-11-02 17:37:31,616] Change_Password_01 - Step 18: Verify login success
+<br><br/>[INFO ] [2021-11-02 17:37:31,689]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">com.nopcommerce.myaccount.TC_04_My_Product_Review#My_Product_Review_01</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:37:38,759] My_Product_Review_01 - Step 01: Open sub menu 'Desktops'
+<br><br/>[INFO ] [2021-11-02 17:37:39,516] My_Product_Review_01 - Step 02: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:37:40,488] My_Product_Review_01 - Step 03: Click to 'Add your review' link
+<br><br/>[INFO ] [2021-11-02 17:37:46,729] My_Product_Review_01 - Step 04: Enter the review title in the textbox 
+<br><br/>[INFO ] [2021-11-02 17:37:46,838] My_Product_Review_01 - Step 05: Enter the review text in the textarea 
+<br><br/>[INFO ] [2021-11-02 17:37:46,948] My_Product_Review_01 - Step 05: Click to 'Submit review' button 
+<br><br/>[INFO ] [2021-11-02 17:37:48,354] My_Product_Review_01 - Step 06: Verify success message is displayed
+<br><br/>[INFO ] [2021-11-02 17:37:48,398]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:48,398] My_Product_Review_01 - Step 07: Open My account page on header
+<br><br/>[INFO ] [2021-11-02 17:37:48,863] My_Product_Review_01 - Step 08: Open tab menu 'My product reviews'
+<br><br/>[INFO ] [2021-11-02 17:37:48,880] My_Product_Review_01 - Step 09: Verify review is displayed
+<br><br/>[INFO ] [2021-11-02 17:37:50,910]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:37:50,970]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.nopcommerce.order.TC_01_Add_Product_To_Cart#TC_01_Add_Product_To_Cart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:40:45,892] TC_01 - Step 01: Open sub menu 'Desktops'
+<br><br/>[INFO ] [2021-11-02 17:40:47,391] TC_01 - Step 02: Click to Product Link
+<br><br/>[INFO ] [2021-11-02 17:40:48,454] TC_01 - Step 03: Click to 'Processor' dropdown
+<br><br/>[INFO ] [2021-11-02 17:40:48,553] TC_01 - Step 04: Verify item in dropdown is selected
+<br><br/>[INFO ] [2021-11-02 17:40:48,639]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:40:48,639] TC_01 - Step 05: Click to 'RAM' dropdown
+<br><br/>[INFO ] [2021-11-02 17:40:48,967] TC_01 - Step 06: Verify item in dropdown is selected
+<br><br/>[INFO ] [2021-11-02 17:40:49,064]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:40:49,064] TC_01 - Step 07: Click to 'HDD' radio button
+<br><br/>[INFO ] [2021-11-02 17:40:49,374] TC_01 - Step 08: Click to 'OS' radio button
+<br><br/>[INFO ] [2021-11-02 17:40:49,684] TC_01 - Step 09: Click to 'Microsoft Office [+$50.00]' radio button
+<br><br/>[INFO ] [2021-11-02 17:40:49,751] TC_01 - Step 10: Click to 'Acrobat Reader [+$10.00]' radio button
+<br><br/>[INFO ] [2021-11-02 17:40:50,061] TC_01 - Step 11: Click to 'Total Commander [+$5.00]' radio button
+<br><br/>[INFO ] [2021-11-02 17:40:50,393] TC_01 - Step 12: Click to 'Add to cart' button
+<br><br/>[INFO ] [2021-11-02 17:40:51,212] TC_01 - Step 13: Verify message is displayed
+<br><br/>[INFO ] [2021-11-02 17:40:51,261]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:40:51,261] TC_01 - Step 14: Click to Close icon
+<br><br/>[INFO ] [2021-11-02 17:40:51,550] TC_01 - Step 15: Hover to mini shopping cart on header menu
+<br><br/>[INFO ] [2021-11-02 17:40:51,736] TC_01 - Step 16: Verify the infomation of the product displayed in the cart
+<br><br/>[INFO ] [2021-11-02 17:40:52,355]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:40:52,414]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:40:52,475]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:40:52,541]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:40:52,632]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:40:52,694]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:40:52,694] TC_01 - Step 17: Get the value of the price unit and parse as float
+<br><br/>[INFO ] [2021-11-02 17:40:52,708] TC_01 - Step 17: Get text of element
+<br><br/>[INFO ] [2021-11-02 17:40:52,755] TC_01 - Step 16: Verify unit price of the product displayed in the cart
+<br><br/>[INFO ] [2021-11-02 17:40:52,818]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:40:52,818] TC_01 - Step 16: Verify quantity of the product displayed in the cart
+<br><br/>[INFO ] [2021-11-02 17:40:52,880]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:40:52,880] TC_01 - Step 16: Verify total price of the product displayed in the cart
+<br><br/>[INFO ] [2021-11-02 17:40:52,894]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.nopcommerce.order.TC_01_Add_Product_To_Cart#TC_02_Edit_Product_To_Cart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:40:52,895] TC_02 - Step 16: Click to 'Go to cart' button
+<br><br/>[INFO ] [2021-11-02 17:40:54,658] TC_02 - Step 16: Click to 'Edit' button in table
+<br><br/>[INFO ] [2021-11-02 17:41:01,483] TC_01 - Step 03: Click to 'Processor' dropdown
+<br><br/>[INFO ] [2021-11-02 17:41:01,810] TC_01 - Step 04: Verify item in dropdown is selected
+<br><br/>[INFO ] [2021-11-02 17:41:01,897]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:01,897] TC_01 - Step 03: Click to 'RAM' dropdown
+<br><br/>[INFO ] [2021-11-02 17:41:02,215] TC_01 - Step 04: Verify item in dropdown is selected
+<br><br/>[INFO ] [2021-11-02 17:41:02,303]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:02,303] TC_01 - Step 07: Click to 'HDD' radio button
+<br><br/>[INFO ] [2021-11-02 17:41:02,588] TC_01 - Step 07: Click to 'OS' radio button
+<br><br/>[INFO ] [2021-11-02 17:41:05,935] TC_01 - Step 07: Uncheck to 'Acrobat Reader [+$10.00]' checkbox
+<br><br/>[INFO ] [2021-11-02 17:41:09,265] TC_01 - Step 07: Uncheck to 'Total Commander [+$5.00]' checkbox
+<br><br/>[INFO ] [2021-11-02 17:41:12,577] TC_01 - Step 07: Enter to quantity textbox
+<br><br/>[INFO ] [2021-11-02 17:41:12,692] TC_01 - Step 07: Verify the price is '$1,320.00'
+<br><br/>[INFO ] [2021-11-02 17:41:12,737]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:12,737] TC_01 - Step 07:Click to 'Update' button
+<br><br/>[INFO ] [2021-11-02 17:41:13,011] Wishlist_01 - Step 04: Verify message is displayed
+<br><br/>[INFO ] [2021-11-02 17:41:13,154]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:13,154] Wishlist_01 - Step 05: Click to Close icon
+<br><br/>[INFO ] [2021-11-02 17:41:13,448] Wishlist_01 - Step 05: Hover to mini shopping cart
+<br><br/>[INFO ] [2021-11-02 17:41:13,630] Wishlist_01 - Step 04: Verify the infomation of the product displayed in the cart
+<br><br/>[INFO ] [2021-11-02 17:41:14,817]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:14,879]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:14,942]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:15,004]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:15,066]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:15,132]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:15,133] TC_01 - Step 17: Get the value of the price unit and parse as float
+<br><br/>[INFO ] [2021-11-02 17:41:15,146] TC_01 - Step 17: Get text of element
+<br><br/>[INFO ] [2021-11-02 17:41:15,190] TC_01 - Step 16: Verify unit price of the product displayed in the cart
+<br><br/>[INFO ] [2021-11-02 17:41:15,259]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:15,259] TC_01 - Step 16: Verify quantity of the product displayed in the cart
+<br><br/>[INFO ] [2021-11-02 17:41:15,317]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:15,317] TC_01 - Step 16: Verify total price of the product displayed in the cart
+<br><br/>[INFO ] [2021-11-02 17:41:15,330]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">com.nopcommerce.order.TC_01_Add_Product_To_Cart#TC_03_Remove_from_Cart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:41:15,332] TC_02 - Step 16: Click to 'Go to cart' button
+<br><br/>[INFO ] [2021-11-02 17:41:16,839] TC_01 - Step 16: Click to 'Remove' button in table
+<br><br/>[INFO ] [2021-11-02 17:41:18,153] TC_01 - Step 16: Verify message is displayed 
+<br><br/>[INFO ] [2021-11-02 17:41:18,227]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:41:18,227] TC_01 - Step 16: Verify the product in table undisplayed 
+<br><br/>[INFO ] [2021-11-02 17:42:23,296]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">com.nopcommerce.order.TC_02_Update_Shopping_Cart#TC_01_Update_Shopping_Cart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:42:38,134] TC_02 - Step 01: Open sub menu 'Desktops '
+<br><br/>[INFO ] [2021-11-02 17:42:39,617] TC_02 - Step 02: Click to the product link
+<br><br/>[INFO ] [2021-11-02 17:42:41,870] TC_02 - Step 03: Click to 'Add to cart'
+<br><br/>[INFO ] [2021-11-02 17:42:42,691] TC_02 - Step 04: Open 'Shopping cart' page
+<br><br/>[INFO ] [2021-11-02 17:42:44,351] TC_02 - Step 05: Verify the product is displayed in the table
+<br><br/>[INFO ] [2021-11-02 17:42:44,426]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:42:44,426] TC_02 - Step 06: Enter to input quantity textbox
+<br><br/>[INFO ] [2021-11-02 17:42:47,584] TC_02 - Step 07: Click to 'Update shopping cart' button
+<br><br/>[INFO ] [2021-11-02 17:42:51,717] TC_02 - Step 08: Verify the total price is updated
+<br><br/>[INFO ] [2021-11-02 17:42:51,824]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">com.nopcommerce.order.TC_05_Checkout_Order_Payment_Method_Card#TC_01_Checkout_Order_Method_Card</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:43:01,824] TC_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>[INFO ] [2021-11-02 17:43:03,589] TC_01 - Step 02: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:43:04,605] TC_01 - Step 03:Click to 'Add to cart' button
+<br><br/>[INFO ] [2021-11-02 17:43:05,987] TC_01 - Step 04: Open 'Shopping cart' menu
+<br><br/>[INFO ] [2021-11-02 17:43:06,784] TC_01 - Step 05:Click to 'Estimate shipping' button
+<br><br/>[INFO ] [2021-11-02 17:43:08,163] TC_01 - Step 06:Select to 'Country name' in dropdown
+<br><br/>[INFO ] [2021-11-02 17:43:10,478] TC_01 - Step 06: Select item 'State Province' in dropdown
+<br><br/>[INFO ] [2021-11-02 17:43:10,560] TC_01 - Step 06: Verify item in dropdown is displayed
+<br><br/>[INFO ] [2021-11-02 17:43:11,038]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:11,038] TC_01 - Step 07: Verify item in dropdown is displayed
+<br><br/>[INFO ] [2021-11-02 17:43:11,111]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:11,111] TC_01 - Step 08:Enter to 'Zip Code' textbox
+<br><br/>[INFO ] [2021-11-02 17:43:11,217] TC_01 - Step 09:Click to 'Next Day Air' radio button
+<br><br/>[INFO ] [2021-11-02 17:43:12,108] TC_01 - Step 10:Click to 'Apply' radio button
+<br><br/>[INFO ] [2021-11-02 17:43:12,393] TC_01 - Step 11:Verify the product is displayed in the table
+<br><br/>[INFO ] [2021-11-02 17:43:12,453]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:12,453] TC_01 - Step 12:Click to checkbox
+<br><br/>[INFO ] [2021-11-02 17:43:12,508] TC_01 - Step 13:Click to 'Check out' button
+<br><br/>[INFO ] [2021-11-02 17:43:15,012] TC_01 - Step 14:Uncheck to 'Ship to the same address' checkbox
+<br><br/>[INFO ] [2021-11-02 17:43:15,302] TC_01 - Step 15:Select to 'Country name' in dropdown
+<br><br/>[INFO ] [2021-11-02 17:43:16,140] TC_01 - Step 16: Verify item in dropdown is displayed
+<br><br/>[INFO ] [2021-11-02 17:43:16,231]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:16,231] TC_01 - Step 17:Enter to 'City' textbox
+<br><br/>[INFO ] [2021-11-02 17:43:16,343] TC_01 - Step 17:Enter to 'Address1' textbox
+<br><br/>[INFO ] [2021-11-02 17:43:16,441] TC_01 - Step 19:Enter to 'Zip code' textbox
+<br><br/>[INFO ] [2021-11-02 17:43:16,530] TC_01 - Step 20:Enter to 'Phone number' textbox
+<br><br/>[INFO ] [2021-11-02 17:43:16,623] TC_01 - Step 03:Click to 'Continue' button' in 'Billing address' title
+<br><br/>[INFO ] [2021-11-02 17:43:16,888] TC_01 - Step 21:Click to 'Continue' button' in 'Shipping addresss' title
+<br><br/>[INFO ] [2021-11-02 17:43:19,329] TC_01 - Step 22:Click to 'Next Day Air ($0.00' radio
+<br><br/>[INFO ] [2021-11-02 17:43:19,637] TC_01 - Step 23:Click to 'Continue' button' in 'Shipping method' title
+<br><br/>[INFO ] [2021-11-02 17:43:20,446] TC_01 - Step 24:Click to 'Credit Card' radio
+<br><br/>[INFO ] [2021-11-02 17:43:20,494] TC_01 - Step 25:Click to 'Continue' button' in 'Payment method' title
+<br><br/>[INFO ] [2021-11-02 17:43:20,761] TC_01 - Step 26:Get text payment information
+<br><br/>[INFO ] [2021-11-02 17:43:20,902]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:20,954]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:20,992]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:21,039]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:21,039] TC_01 - Step 27:Click to 'Continue' button' in 'Payment information' title
+<br><br/>[INFO ] [2021-11-02 17:43:21,306] TC_01 - Step 28:Verify the infomation in 'Billing Address' are displayed
+<br><br/>[INFO ] [2021-11-02 17:43:22,409]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,455]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,501]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,549]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,596]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,642]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,688]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,688] TC_01 - Step 29:Verify the infomation in 'Payment Method' are displayed
+<br><br/>[INFO ] [2021-11-02 17:43:22,740]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,740] TC_01 - Step30:Verify the infomation in 'Shipping Address' are displayed
+<br><br/>[INFO ] [2021-11-02 17:43:22,780]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,826]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,874]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,921]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:22,968]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:23,014]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:23,060]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:23,061] TC_01 - Step 31:Verify the infomation in 'Shipping Method' are displayed
+<br><br/>[INFO ] [2021-11-02 17:43:23,110]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:43:23,110] TC_01 - Step 32:Verify the product in the table is displayed
+<br><br/>[INFO ] [2021-11-02 17:43:23,174]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:23,255]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:23,315]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:23,374]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:23,438]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:23,497]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:23,497] TC_01 - Step 33:Click to 'Confirm' button
+<br><br/>[INFO ] [2021-11-02 17:44:24,338] TC_01 - Step 34:Verify success message is displayed
+<br><br/>[INFO ] [2021-11-02 17:44:25,441]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:25,441] TC_01 - Step 35:Verify order number value
+<br><br/>[INFO ] [2021-11-02 17:44:25,495]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:25,495] TC_01 - Step 36: Open 'Orders' form
+<br><br/>[INFO ] [2021-11-02 17:44:29,690] TC_01 - Step 37:Verify order number value with order list value
+<br><br/>[INFO ] [2021-11-02 17:44:29,759]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:29,759] TC_01 - Step 38:Click to 'Details' button
+<br><br/>[INFO ] [2021-11-02 17:44:30,281] TC_01 - Step 39:Verify text order number is displayed
+<br><br/>[INFO ] [2021-11-02 17:44:30,328]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,343] TC_01 - Step 40:Verify the infomation in 'Order Date', 'Order Status', 'Order Total' are displayed
+<br><br/>[INFO ] [2021-11-02 17:44:33,420]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,472]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,520]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,520] TC_01 - Step 41:Verify the infomation in 'Billing Address' are displayed
+<br><br/>[INFO ] [2021-11-02 17:44:33,569]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,613]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,660]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,707]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,756]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,802]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,845]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,845] TC_01 - Step 42:Verify the infomation in 'Payment Method' are displayed
+<br><br/>[INFO ] [2021-11-02 17:44:33,893]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,893] TC_01 - Step 43:Verify the infomation in 'Shipping Address' are displayed
+<br><br/>[INFO ] [2021-11-02 17:44:33,938]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:33,987]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:34,033]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:34,080]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:34,125]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:34,171]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:34,221]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:34,221] TC_01 - Step 44:Verify the infomation in 'Shipping Method' are displayed
+<br><br/>[INFO ] [2021-11-02 17:44:34,287]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:44:34,287] TC_01 - Step 45:Verify the product in the table is displayed
+<br><br/>[INFO ] [2021-11-02 17:44:34,373]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">com.nopcommerce.register.TC_01_Register#Register_01_Empty_Data</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:28:29,856] Register_01 - Step 01: Enter empty info to 'First Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:29,941] Register_01 - Step 02: Enter empty info to 'Last Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:30,036] Register_01 - Step 03: Enter empty info to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:30,128] Register_01 - Step 04: Enter empty info to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:30,223] Register_01 - Step 05: Enter empty info to 'Confirm Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:30,313] Register_01 - Step 06: Click to 'Register' button
+<br><br/>[INFO ] [2021-11-02 17:28:30,605] Register_01 - Step 07: Verify all error messages are displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:28:30,675]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:28:30,737]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:28:30,800]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:28:30,876]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:28:30,938]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">com.nopcommerce.register.TC_01_Register#Register_02_Invalid_Email</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:28:30,941] Register_02 - Step 01: Enter valid info to 'First Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:31,047] Register_02 - Step 02: Enter valid info to 'Last Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:31,143] Register_02 - Step 03: Enter invalid info to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:31,246] Register_02 - Step 04: Enter valid info to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:31,354] Register_02 - Step 05: Enter valid info to 'Confirm Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:31,467] Register_02 - Step 06: Click to 'Register' button
+<br><br/>[INFO ] [2021-11-02 17:28:31,927] Register_02 - Step 07: Verify email error messages is displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:28:32,011]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">com.nopcommerce.register.TC_01_Register#Register_03_Valid_Infomation</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:28:32,012] Register_03 - Step 01: Enter valid info to 'First Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:32,106] Register_03 - Step 02: Enter valid info to 'Last Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:32,195] Register_03 - Step 03: Enter valid info to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:32,295] Register_03 - Step 04: Enter valid info to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:32,405] Register_03 - Step 05: Enter valid info to 'Confirm Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:32,527] Register_03 - Step 06: Click to 'Register' button
+<br><br/>[INFO ] [2021-11-02 17:28:34,104] Register_03 - Step 07: Verify success messages is displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:28:34,164]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:28:34,164] Register_03 - Step 08: Open 'Logout' page on header
+<br><br/>[INFO ] [2021-11-02 17:28:36,580] Register_03 - Step 09: Open 'Register' page on header
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">com.nopcommerce.register.TC_01_Register#Register_04_Exist_Email</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:28:37,773] Register_03 - Step 01: Enter valid info to 'First Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:37,873] Register_03 - Step 02: Enter valid info to 'Last Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:37,985] Register_03 - Step 03: Enter an already existing email to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:38,079] Register_03 - Step 04: Enter valid info to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:38,199] Register_03 - Step 05: Enter valid info to 'Confirm Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:38,314] Register_03 - Step 06: Click to 'Register' button
+<br><br/>[INFO ] [2021-11-02 17:28:38,759] Register_04 - Step 08: Verify email error messages is displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:28:38,818]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">com.nopcommerce.register.TC_01_Register#Register_05_InValid_Password</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:28:38,819] Register_03 - Step 01: Enter valid info to 'First Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:38,910] Register_03 - Step 02: Enter valid info to 'Last Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:39,003] Register_03 - Step 03: Enter an already existing email to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:39,104] Register_03 - Step 04: Enter invalid info to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:39,191] Register_03 - Step 05: Enter valid info to 'Confirm Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:39,294] Register_03 - Step 06: Click to 'Register' button
+<br><br/>[INFO ] [2021-11-02 17:28:39,577] Register_05 - Step 07: Verify password error messages is displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:28:39,640]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">com.nopcommerce.register.TC_01_Register#Register_06_Not_Match_Password</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:28:39,641] Register_03 - Step 01: Enter valid info to 'First Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:39,731] Register_03 - Step 02: Enter valid info to 'Last Name' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:39,824] Register_03 - Step 03: Enter an already existing email to 'Email' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:39,945] Register_03 - Step 04: Enter valid info to 'Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:40,044] Register_03 - Step 05: Enter invalid info to 'Confirm Password' textbox
+<br><br/>[INFO ] [2021-11-02 17:28:40,170] Register_03 - Step 06: Click to 'Register' button
+<br><br/>[INFO ] [2021-11-02 17:28:40,441] Register_06 - Step 07: Verify confirm password error messages is displayed in mandantory fields
+<br><br/>[INFO ] [2021-11-02 17:28:40,530]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">com.nopcommerce.search.TC_01_Search_Advanced_Search#Search_01_Empty_Data</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:06,267] Pre-Condition - Step 01: Open Search page on footer
+<br><br/>[INFO ] [2021-11-02 17:38:07,873] Search_01 - Step 02: Enter empty data to 'Search keyword' textbox
+<br><br/>[INFO ] [2021-11-02 17:38:07,963] Search_01 - Step 03: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:38:12,180] Search_01 - Step 04: Verify error messages is displayed
+<br><br/>[INFO ] [2021-11-02 17:38:12,251]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">com.nopcommerce.search.TC_01_Search_Advanced_Search#Search_02_Not_Exist_Data</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:12,252] Searc_02 - Step 01: Enter not exist data to 'Search keyword' textbox
+<br><br/>[INFO ] [2021-11-02 17:38:12,347] Searc_02 - Step 02: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:38:12,834] Searcn_02 - Step 03: Verify error messages is displayed
+<br><br/>[INFO ] [2021-11-02 17:38:12,897]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m40">com.nopcommerce.search.TC_01_Search_Advanced_Search#TC_03_Product_Name_Relative</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:12,899] TC_03 - Step 01: Enter relative data to 'Search keyword' textbox
+<br><br/>[INFO ] [2021-11-02 17:38:12,993] TC_03 - Step 02: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:38:14,409] TC_03 - Step 03: Verify 2 product titles are displayed
+<br><br/>[INFO ] [2021-11-02 17:38:14,476]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:14,547]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:14,547] TC_03 - Step 04: Get the product size by 2
+<br><br/>[INFO ] [2021-11-02 17:38:14,593]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m41">com.nopcommerce.search.TC_01_Search_Advanced_Search#TC_04_Product_Name_Absolute</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:14,594] TC_04 - Step 01: Enter absolute data to 'Search keyword' textbox
+<br><br/>[INFO ] [2021-11-02 17:38:14,694] TC_04 - Step 02: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:38:15,853] TC_04 - Step 03: Verify only one product titles are displayed
+<br><br/>[INFO ] [2021-11-02 17:38:15,921]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:15,921] TC_04 - Step 04: Get the product size by 1
+<br><br/>[INFO ] [2021-11-02 17:38:15,961]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m42">com.nopcommerce.search.TC_01_Search_Advanced_Search#TC_05_Parent_Categories</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:15,962] TC_05 - Step 01: Enter keyword to 'Search keyword' textbox
+<br><br/>[INFO ] [2021-11-02 17:38:16,064] TC_05 - Step 02: Check to 'Advanced Search' checkbox
+<br><br/>[INFO ] [2021-11-02 17:38:16,351] TC_05 - Step 03: Verify 'Advanced Search' is selected
+<br><br/>[INFO ] [2021-11-02 17:38:16,379]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:16,379] TC_05 - Step 04:Select item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:38:16,709] TC_05 - Step 05: Verify item is selected
+<br><br/>[INFO ] [2021-11-02 17:38:16,814]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:16,814] TC_05 - Step 06: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:38:18,412] TC_05 - Step 07: Verify error messages is displayed
+<br><br/>[INFO ] [2021-11-02 17:38:18,474]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m43">com.nopcommerce.search.TC_01_Search_Advanced_Search#TC_06_Product_Sub_Categories</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:18,475] TC_06 - Step 01: Verify textbox is entered 'Apple MacBook Pro' text
+<br><br/>[INFO ] [2021-11-02 17:38:18,531]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:18,531] TC_06 - Step 02: Verify 'Advanced Search' is selected
+<br><br/>[INFO ] [2021-11-02 17:38:18,547]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:18,548] TC_06 - Step 03: Verify item is selected
+<br><br/>[INFO ] [2021-11-02 17:38:18,629]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:18,629] TC_06 - Step 04: Check to 'Automatically search sub categories' checkbox
+<br><br/>[INFO ] [2021-11-02 17:38:18,916] TC_06 - Step 05: Verify 'Automatically search sub categories' is selected
+<br><br/>[INFO ] [2021-11-02 17:38:18,942]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:18,942] TC_06 - Step 06: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:38:20,556] Login_01 - Step 07: Verify only one product titles are displayed
+<br><br/>[INFO ] [2021-11-02 17:38:20,619]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:20,619] Login_01 - Step 08: Get the product size by 1
+<br><br/>[INFO ] [2021-11-02 17:38:20,659]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m44">com.nopcommerce.search.TC_01_Search_Advanced_Search#TC_07_Incorrect_Manufactuner</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:20,660] TC_07 - Step 01: Verify textbox is entered 'Apple MacBook Pro' text
+<br><br/>[INFO ] [2021-11-02 17:38:20,723]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:20,723] TC_07 - Step 02: Verify 'Advanced Search' is selected
+<br><br/>[INFO ] [2021-11-02 17:38:20,739]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:20,739] TC_07 - Step 03: Verify item is selected
+<br><br/>[INFO ] [2021-11-02 17:38:20,823]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:20,823] TC_07 - Step 04: Check to 'Automatically search sub categories' checkbox
+<br><br/>[INFO ] [2021-11-02 17:38:20,861] TC_07 - Step 05: Verify 'Automatically search sub categories' is selected
+<br><br/>[INFO ] [2021-11-02 17:38:20,878]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:20,878] TC_07 - Step 06:Select item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:38:21,201] TC_07 - Step 07: Verify item is selected
+<br><br/>[INFO ] [2021-11-02 17:38:21,293]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:21,293] TC_07 - Step 08: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:38:23,155] TC_07 - Step 09: Verify error messages is displayed
+<br><br/>[INFO ] [2021-11-02 17:38:23,217]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m45">com.nopcommerce.search.TC_01_Search_Advanced_Search#TC_08_Correct_Manufactuner</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:23,218] TC_08 - Step 01: Verify textbox is entered 'Apple MacBook Pro' text
+<br><br/>[INFO ] [2021-11-02 17:38:23,298]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:23,298] TC_08 - Step 02: Verify 'Advanced Search' is selected
+<br><br/>[INFO ] [2021-11-02 17:38:23,308]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:23,308] TC_08 - Step 03: Verify item is selected
+<br><br/>[INFO ] [2021-11-02 17:38:23,424]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:23,424] TC_08 - Step 04: Check to 'Automatically search sub categories' checkbox
+<br><br/>[INFO ] [2021-11-02 17:38:23,488] TC_08 - Step 05: Verify 'Automatically search sub categories' is selected
+<br><br/>[INFO ] [2021-11-02 17:38:23,504]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:23,504] TC_08 - Step 06:Select item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:38:23,832] TC_08 - Step 07: Verify item is selected
+<br><br/>[INFO ] [2021-11-02 17:38:23,922]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:23,922] TC_08 - Step 08: Click to 'Search' button
+<br><br/>[INFO ] [2021-11-02 17:38:25,533] TC_08 - Step 09: Verify only one product titles are displayed
+<br><br/>[INFO ] [2021-11-02 17:38:25,597]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:25,597] TC_08 - Step 10: Get the product size by 1
+<br><br/>[INFO ] [2021-11-02 17:38:25,636]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m46">com.nopcommerce.sort.TC_01_Sort_Display_Paging#TC_01_Sort_By_Name_A_Z</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:31,395] Sort_01 - Step 01: Select item in sort dropdown
+<br><br/>[INFO ] [2021-11-02 17:38:33,709] Sort_01 - Step 02: Verify product names are sorted in ascending order
+<br><br/>[INFO ] [2021-11-02 17:38:33,773]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m47">com.nopcommerce.sort.TC_01_Sort_Display_Paging#TC_02_Sort_By_Name_Z_A</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:33,774] Sort_01 - Step 01: Select item in sort dropdown
+<br><br/>[INFO ] [2021-11-02 17:38:36,098] Sort_01 - Step 02: Verify product names are sorted in descending order
+<br><br/>[INFO ] [2021-11-02 17:38:36,142]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m48">com.nopcommerce.sort.TC_01_Sort_Display_Paging#TC_03_Sort_By_Price_Low_To_Hight</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:36,143] Sort_01 - Step 01: Select item in sort dropdown
+<br><br/>[INFO ] [2021-11-02 17:38:38,463] Sort_01 - Step 02: Verify product prices are sorted in descending order
+<br><br/>[INFO ] [2021-11-02 17:38:38,539]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m49">com.nopcommerce.sort.TC_01_Sort_Display_Paging#TC_04_Sort_By_Price_Hight_To_Low</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:38,541] Sort_01 - Step 01: Select item in sort dropdown
+<br><br/>[INFO ] [2021-11-02 17:38:40,856] Sort_01 - Step 02: Verify product prices are sorted in descending order
+<br><br/>[INFO ] [2021-11-02 17:38:40,943]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m50">com.nopcommerce.sort.TC_01_Sort_Display_Paging#TC_05_Display_Three_Per_Page</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:40,944] TC_05 - Step 01:Select item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:38:41,243] TC_05 - Step 02: Verify item is selected
+<br><br/>[INFO ] [2021-11-02 17:38:41,315]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:44,315] TC_05 - Step 03: Verify product size is only 3 or less than 3 products
+<br><br/>[INFO ] [2021-11-02 17:38:44,340]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:44,340] TC_05 - Step 04: Verify the current page is '1'
+<br><br/>[INFO ] [2021-11-02 17:38:44,403]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:44,403] TC_05 - Step 05: Verify next icon is displayed
+<br><br/>[INFO ] [2021-11-02 17:38:44,464]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m51">com.nopcommerce.sort.TC_01_Sort_Display_Paging#TC_06_Display_Six_Per_Page</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:38:44,465] TC_06 - Step 01:Select item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:38:44,770] TC_06 - Step 02: Verify item is selected
+<br><br/>[INFO ] [2021-11-02 17:38:44,855]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:47,859] TC_06 - Step 03: Verify product size is only 6 or less than 6 products
+<br><br/>[INFO ] [2021-11-02 17:38:47,883]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:38:47,884] TC_06 - Step 04: Verify Page undispayed
+<br><br/>[INFO ] [2021-11-02 17:39:52,956]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m52">com.nopcommerce.sort.TC_01_Sort_Display_Paging#TC_07_Display_Nine_Per_Page</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:39:52,958] TC_07 - Step 01:Select item in dropdown
+<br><br/>[INFO ] [2021-11-02 17:39:53,268] TC_07 - Step 02: Verify item is selected
+<br><br/>[INFO ] [2021-11-02 17:39:53,399]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:39:56,407] TC_07 - Step 03: Verify product size is only 9 or less than 9 products
+<br><br/>[INFO ] [2021-11-02 17:39:56,432]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:39:56,432] TC_07 - Step 04: Verify Page undispayed
+<br><br/>[INFO ] [2021-11-02 17:40:31,507]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m53">com.nopcommerce.wishlist.TC_01_Add_To_Wishlist#Wishlist_01_Add_To_Wishlist</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:28:55,475] Wishlist_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>[INFO ] [2021-11-02 17:28:57,173] Wishlist_01 - Step 02: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:28:59,068] Wishlist_01 - Step 03: Click to 'Add to wishlist' link
+<br><br/>[INFO ] [2021-11-02 17:28:59,339] Wishlist_01 - Step 04: Verify message is displayed
+<br><br/>[INFO ] [2021-11-02 17:29:00,195]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:29:00,195] Wishlist_01 - Step 05: Click to Close icon
+<br><br/>[INFO ] [2021-11-02 17:29:02,500] Wishlist_01 - Step 06: Open 'Wishlist' page on header
+<br><br/>[INFO ] [2021-11-02 17:29:03,036] Wishlist_01 - Step 07: Verify Product Information displayed at table
+<br><br/>[INFO ] [2021-11-02 17:29:03,097]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:29:03,097] Wishlist_01 - Step 08: Click to 'Your wishlist URL for sharing' link
+<br><br/>[INFO ] [2021-11-02 17:29:04,239] Wishlist_01 - Step 09: Verify page title is displayed with firstName and lastName 
+<br><br/>[INFO ] [2021-11-02 17:29:04,308]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m54">com.nopcommerce.wishlist.TC_02_Add_To_Cart#Add_To_Cart_01</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:29:35,010] Add_To_Cart_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>[INFO ] [2021-11-02 17:29:36,733] Add_To_Cart_01 - Step 02: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:29:38,596] Add_To_Cart_01 - Step 03: Click to 'Add your review' link
+<br><br/>[INFO ] [2021-11-02 17:29:38,869] Add_To_Cart_01 - Step 04: Verify message is displayed
+<br><br/>[INFO ] [2021-11-02 17:29:39,804]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:29:39,805] Add_To_Cart_01 - Step 05: Click to Close icon
+<br><br/>[INFO ] [2021-11-02 17:29:42,085] Add_To_Cart_01 - Step 06: Open 'Wishlist' page on header
+<br><br/>[INFO ] [2021-11-02 17:29:43,310] Add_To_Cart_01 - Step 07: Verify Product Information displayed at table
+<br><br/>[INFO ] [2021-11-02 17:29:43,366]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:29:43,366] Add_To_Cart_01 - Step 08: Click to Checkbox at line '1' 
+<br><br/>[INFO ] [2021-11-02 17:29:43,668] Add_To_Cart_01 - Step 09: Click to 'Add to cart' button
+<br><br/>[INFO ] [2021-11-02 17:29:44,691] Add_To_Cart_01 - Step 10: Verify Product Information displayed at table
+<br><br/>[INFO ] [2021-11-02 17:29:44,761]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:29:44,761] Add_To_Cart_01 - Step 11: Verify shopping cart title is displayed
+<br><br/>[INFO ] [2021-11-02 17:29:44,823]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:29:45,936] Add_To_Cart_01 - Step 07: Verify message no data in page
+<br><br/>[INFO ] [2021-11-02 17:29:46,004]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m55">com.nopcommerce.wishlist.TC_03_Remove_Product#Remove_Product_01</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:30:01,295] Remove_Product_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>[INFO ] [2021-11-02 17:30:04,078] Remove_Product_01 - Step 02: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:30:07,069] Remove_Product_01 - Step 03: Click to 'Add your review' link
+<br><br/>[INFO ] [2021-11-02 17:30:07,350] Remove_Product_01 - Step 04: Verify message is displayed
+<br><br/>[INFO ] [2021-11-02 17:30:08,223]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:30:08,223] Remove_Product_01 - Step 05: Click to Close icon
+<br><br/>[INFO ] [2021-11-02 17:30:10,538] Remove_Product_01 - Step 06: Open 'Wishlist' page on header
+<br><br/>[INFO ] [2021-11-02 17:30:12,647] Remove_Product_01 - Step 07: Verify Product Information displayed at table
+<br><br/>[INFO ] [2021-11-02 17:30:12,719]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:30:12,719] Remove_Product_01 - Step 08: Click to Remove icon at line '1' 
+<br><br/>[INFO ] [2021-11-02 17:30:13,901] Remove_Product_01 - Step 00: Verify message no data in page
+<br><br/>[INFO ] [2021-11-02 17:30:13,968]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:30:13,968] Remove_Product_01 - Step 10: Verify shopping cart title is displayed
+<br><br/>[INFO ] [2021-11-02 17:31:19,036]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m56">com.nopcommerce.wishlist.TC_04_Add_To_Compare#Add_To_Compare_01</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:31:33,566] Add_To_Compare_01 - Step 01: Open sub menu 'Desktops '
+<br><br/>[INFO ] [2021-11-02 17:31:35,077] Add_To_Compare_01 - Step 02: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:31:36,437] Add_To_Compare_01 - Step 03: Verify message is displayed
+<br><br/>[INFO ] [2021-11-02 17:31:36,519]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:31:36,519] Add_To_Compare_01 - Step 04: Click to Close icon
+<br><br/>[INFO ] [2021-11-02 17:31:36,797] Add_To_Compare_01 - Step 05: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:31:37,619] Add_To_Compare_01 - Step 06: Verify message is displayed
+<br><br/>[INFO ] [2021-11-02 17:31:37,668]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:31:37,668] Add_To_Compare_01 - Step 07: Click to Close icon
+<br><br/>[INFO ] [2021-11-02 17:31:37,944] Pre-Condition - Step 08: Open Register 'Compare products list' page on footer
+<br><br/>[INFO ] [2021-11-02 17:31:38,425] Add_To_Compare_01 - Step 09: Verify Product Information displayed at table
+<br><br/>[INFO ] [2021-11-02 17:32:38,530]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:33:38,625]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:33:38,700]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:33:38,758]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:33:38,820]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:33:38,820] Add_To_Compare_01 - Step 10: Click to 'Clear List' button
+<br><br/>[INFO ] [2021-11-02 17:33:38,912] Add_To_Compare_01 - Step 11: Verify message is displayed
+<br><br/>[INFO ] [2021-11-02 17:33:41,204]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:33:41,204] Add_To_Compare_01 - Step 12: Verify the product Undisplayed
+<br><br/>[INFO ] [2021-11-02 17:34:46,276]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:35:21,362]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:35:56,450]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m57">com.nopcommerce.wishlist.TC_05_Recently_Viewed_Product#Add_To_Cart_01</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-11-02 17:36:10,551] Add_To_Cart_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>[INFO ] [2021-11-02 17:36:12,267] Add_To_Cart_01 - Step 02: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:36:14,958] Add_To_Cart_01 - Step 03: Click to back page
+<br><br/>[INFO ] [2021-11-02 17:36:15,038] Add_To_Cart_01 - Step 04: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:36:16,855] Add_To_Cart_01 - Step 05: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:36:18,668] Add_To_Cart_01 - Step 06: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:36:21,461] Add_To_Cart_01 - Step 07: Click to the product title link
+<br><br/>[INFO ] [2021-11-02 17:36:23,133] Add_To_Cart_01 - Step 08: Open 'Recently viewed products' page on footer menu
+<br><br/>[INFO ] [2021-11-02 17:36:25,256] Add_To_Cart_01 - Step 09: Verify only the last three products are displayed
+<br><br/>[INFO ] [2021-11-02 17:36:25,316]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:36:25,378]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2021-11-02 17:36:25,439]  -------------------------- PASSED -------------------------- 
+<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

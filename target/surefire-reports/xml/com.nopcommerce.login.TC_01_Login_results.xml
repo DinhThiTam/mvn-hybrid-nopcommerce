@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on FIREFOX"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="5.327">
+  <properties />
+  
+  
+            <testcase name="Login_06_Login_Success" time="2.003" classname="com.nopcommerce.login.TC_01_Login" />
+                <testcase name="Login_03_Login_Not_Register_Email" time="0.781" classname="com.nopcommerce.login.TC_01_Login" />
+                <testcase name="Login_04_Empty_Password" time="0.681" classname="com.nopcommerce.login.TC_01_Login" />
+                <testcase name="Login_02_Login_Invalid_Email" time="0.574" classname="com.nopcommerce.login.TC_01_Login" />
+                <testcase name="Login_05_Login_Invalid_Password" time="0.722" classname="com.nopcommerce.login.TC_01_Login" />
+                <testcase name="Login_01_Login_Empty_Data" time="0.566" classname="com.nopcommerce.login.TC_01_Login" />
+      
+</testsuite>

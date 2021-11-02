@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on FIREFOX"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="19.368">
+  <properties />
+  
+  
+            <testcase name="TC_06_Product_Sub_Categories" time="2.185" classname="com.nopcommerce.search.TC_01_Search_Advanced_Search" />
+                <testcase name="TC_04_Product_Name_Absolute" time="1.367" classname="com.nopcommerce.search.TC_01_Search_Advanced_Search" />
+                <testcase name="Search_02_Not_Exist_Data" time="0.646" classname="com.nopcommerce.search.TC_01_Search_Advanced_Search" />
+                <testcase name="Search_01_Empty_Data" time="5.986" classname="com.nopcommerce.search.TC_01_Search_Advanced_Search" />
+                <testcase name="TC_03_Product_Name_Relative" time="1.695" classname="com.nopcommerce.search.TC_01_Search_Advanced_Search" />
+                <testcase name="TC_07_Incorrect_Manufactuner" time="2.557" classname="com.nopcommerce.search.TC_01_Search_Advanced_Search" />
+                <testcase name="TC_05_Parent_Categories" time="2.513" classname="com.nopcommerce.search.TC_01_Search_Advanced_Search" />
+                <testcase name="TC_08_Correct_Manufactuner" time="2.419" classname="com.nopcommerce.search.TC_01_Search_Advanced_Search" />
+      
+</testsuite>

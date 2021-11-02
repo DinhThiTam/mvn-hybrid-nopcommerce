@@ -1,0 +1,1790 @@
+<html>
+<head>
+<title>TestNG:  Run on FIREFOX</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run on FIREFOX</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>41/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 02 17:28:09 ICT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>1076 seconds (1076298 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce.order.TC_06_Checkout_Order_Payment_Method_Cheque.TC_01_Checkout_Method_Cheque()'><b>TC_01_Checkout_Method_Cheque</b><br>Test class: com.nopcommerce.order.TC_06_Checkout_Order_Payment_Method_Cheque<br/>
+<a href="#Output-793135940" onClick='toggleBox("Output-793135940", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-793135940" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-793135940">
+[INFO ] [2021-11-02 17:44:41,505] TC_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>
+[INFO ] [2021-11-02 17:44:42,322] TC_01 - Step 02: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:44:43,486] TC_01 - Step 03:Click to 'Add to cart' button
+<br><br/>
+[INFO ] [2021-11-02 17:44:44,263] TC_01 - Step 04: Open 'Shopping cart' menu
+<br><br/>
+[INFO ] [2021-11-02 17:44:44,892] TC_01 - Step 05:Click to 'Estimate shipping' button
+<br><br/>
+[INFO ] [2021-11-02 17:44:47,661] TC_01 - Step 06:Select to 'Country name' in dropdown
+<br><br/>
+<br><a target="_blank" href="file:///F:\Autotest\AutomationFC\04-MavenFramework/screenshotReportNG/TC_01_Checkout_Method_Cheque_02_11_2021_05_45_17.png"><img src="file:///F:\Autotest\AutomationFC\04-MavenFramework/screenshotReportNG/TC_01_Checkout_Method_Cheque_02_11_2021_05_45_17.png" height='100' width='150'/> </a></br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //select[@name=&apos;CountryId&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E6N9TK3&apos;, ip: &apos;192.168.1.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 12252, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7850dd01-3b92-46a2-a931-dcd7b608baa9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementClickable(BasePage.java:587)
+	at commons.BasePage.selectItemInDropdownByName(BasePage.java:647)
+	at com.nopcommerce.order.TC_06_Checkout_Order_Payment_Method_Cheque.TC_01_Checkout_Method_Cheque(TC_06_Checkout_Order_Payment_Method_Cheque.java:102)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793135940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793135940'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //select[@name=&apos;CountryId&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E6N9TK3&apos;, ip: &apos;192.168.1.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 12252, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7850dd01-3b92-46a2-a931-dcd7b608baa9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementClickable(BasePage.java:587)
+	at commons.BasePage.selectItemInDropdownByName(BasePage.java:647)
+	at com.nopcommerce.order.TC_06_Checkout_Order_Payment_Method_Cheque.TC_01_Checkout_Method_Cheque(TC_06_Checkout_Order_Payment_Method_Cheque.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>36</td>
+<td>com.nopcommerce.order.TC_06_Checkout_Order_Payment_Method_Cheque@3113a37</td></tr>
+<tr>
+<td title='com.nopcommerce.order.TC_07_Re_Order.TC_01_Re_Order()'><b>TC_01_Re_Order</b><br>Test class: com.nopcommerce.order.TC_07_Re_Order<br/>
+<a href="#Output-820619761" onClick='toggleBox("Output-820619761", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-820619761" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-820619761">
+[INFO ] [2021-11-02 17:45:28,280] TC_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>
+[INFO ] [2021-11-02 17:45:29,051] TC_01 - Step 02: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:45:30,172] TC_01 - Step 03:Click to 'Add to cart' button
+<br><br/>
+[INFO ] [2021-11-02 17:45:30,965] TC_01 - Step 04: Open 'Shopping cart' menu
+<br><br/>
+[INFO ] [2021-11-02 17:45:32,468] TC_01 - Step 05:Click to 'Estimate shipping' button
+<br><br/>
+[INFO ] [2021-11-02 17:45:34,846] TC_01 - Step 06:Select to 'Country name' in dropdown
+<br><br/>
+<br><a target="_blank" href="file:///F:\Autotest\AutomationFC\04-MavenFramework/screenshotReportNG/TC_01_Re_Order_02_11_2021_05_46_05.png"><img src="file:///F:\Autotest\AutomationFC\04-MavenFramework/screenshotReportNG/TC_01_Re_Order_02_11_2021_05_46_05.png" height='100' width='150'/> </a></br><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //select[@name=&apos;CountryId&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E6N9TK3&apos;, ip: &apos;192.168.1.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 22484, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 28ac90a1-3862-4c9b-860f-81dc4986cbff
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementClickable(BasePage.java:587)
+	at commons.BasePage.selectItemInDropdownByName(BasePage.java:647)
+	at com.nopcommerce.order.TC_07_Re_Order.TC_01_Re_Order(TC_07_Re_Order.java:105)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace820619761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace820619761'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //select[@name=&apos;CountryId&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E6N9TK3&apos;, ip: &apos;192.168.1.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 93.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210927210923, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 22484, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 28ac90a1-3862-4c9b-860f-81dc4986cbff
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementClickable(BasePage.java:587)
+	at commons.BasePage.selectItemInDropdownByName(BasePage.java:647)
+	at com.nopcommerce.order.TC_07_Re_Order.TC_01_Re_Order(TC_07_Re_Order.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>36</td>
+<td>com.nopcommerce.order.TC_07_Re_Order@213e3629</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce.wishlist.TC_02_Add_To_Cart.Add_To_Cart_01()'><b>Add_To_Cart_01</b><br>Test class: com.nopcommerce.wishlist.TC_02_Add_To_Cart<br/>
+<a href="#Output-627621884" onClick='toggleBox("Output-627621884", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-627621884" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-627621884">
+[INFO ] [2021-11-02 17:29:35,010] Add_To_Cart_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>
+[INFO ] [2021-11-02 17:29:36,733] Add_To_Cart_01 - Step 02: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:29:38,596] Add_To_Cart_01 - Step 03: Click to 'Add your review' link
+<br><br/>
+[INFO ] [2021-11-02 17:29:38,869] Add_To_Cart_01 - Step 04: Verify message is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:29:39,804]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:29:39,805] Add_To_Cart_01 - Step 05: Click to Close icon
+<br><br/>
+[INFO ] [2021-11-02 17:29:42,085] Add_To_Cart_01 - Step 06: Open 'Wishlist' page on header
+<br><br/>
+[INFO ] [2021-11-02 17:29:43,310] Add_To_Cart_01 - Step 07: Verify Product Information displayed at table
+<br><br/>
+[INFO ] [2021-11-02 17:29:43,366]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:29:43,366] Add_To_Cart_01 - Step 08: Click to Checkbox at line '1' 
+<br><br/>
+[INFO ] [2021-11-02 17:29:43,668] Add_To_Cart_01 - Step 09: Click to 'Add to cart' button
+<br><br/>
+[INFO ] [2021-11-02 17:29:44,691] Add_To_Cart_01 - Step 10: Verify Product Information displayed at table
+<br><br/>
+[INFO ] [2021-11-02 17:29:44,761]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:29:44,761] Add_To_Cart_01 - Step 11: Verify shopping cart title is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:29:44,823]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:29:45,936] Add_To_Cart_01 - Step 07: Verify message no data in page
+<br><br/>
+[INFO ] [2021-11-02 17:29:46,004]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.nopcommerce.wishlist.TC_02_Add_To_Cart@210386e0</td></tr>
+<tr>
+<td title='com.nopcommerce.wishlist.TC_05_Recently_Viewed_Product.Add_To_Cart_01()'><b>Add_To_Cart_01</b><br>Test class: com.nopcommerce.wishlist.TC_05_Recently_Viewed_Product<br/>
+<a href="#Output-1782533518" onClick='toggleBox("Output-1782533518", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1782533518" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1782533518">
+[INFO ] [2021-11-02 17:36:10,551] Add_To_Cart_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>
+[INFO ] [2021-11-02 17:36:12,267] Add_To_Cart_01 - Step 02: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:36:14,958] Add_To_Cart_01 - Step 03: Click to back page
+<br><br/>
+[INFO ] [2021-11-02 17:36:15,038] Add_To_Cart_01 - Step 04: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:36:16,855] Add_To_Cart_01 - Step 05: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:36:18,668] Add_To_Cart_01 - Step 06: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:36:21,461] Add_To_Cart_01 - Step 07: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:36:23,133] Add_To_Cart_01 - Step 08: Open 'Recently viewed products' page on footer menu
+<br><br/>
+[INFO ] [2021-11-02 17:36:25,256] Add_To_Cart_01 - Step 09: Verify only the last three products are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:36:25,316]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:36:25,378]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:36:25,439]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.nopcommerce.wishlist.TC_05_Recently_Viewed_Product@51684e4a</td></tr>
+<tr>
+<td title='com.nopcommerce.wishlist.TC_04_Add_To_Compare.Add_To_Compare_01()'><b>Add_To_Compare_01</b><br>Test class: com.nopcommerce.wishlist.TC_04_Add_To_Compare<br/>
+<a href="#Output-1079463647" onClick='toggleBox("Output-1079463647", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1079463647" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1079463647">
+[INFO ] [2021-11-02 17:31:33,566] Add_To_Compare_01 - Step 01: Open sub menu 'Desktops '
+<br><br/>
+[INFO ] [2021-11-02 17:31:35,077] Add_To_Compare_01 - Step 02: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:31:36,437] Add_To_Compare_01 - Step 03: Verify message is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:31:36,519]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:31:36,519] Add_To_Compare_01 - Step 04: Click to Close icon
+<br><br/>
+[INFO ] [2021-11-02 17:31:36,797] Add_To_Compare_01 - Step 05: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:31:37,619] Add_To_Compare_01 - Step 06: Verify message is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:31:37,668]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:31:37,668] Add_To_Compare_01 - Step 07: Click to Close icon
+<br><br/>
+[INFO ] [2021-11-02 17:31:37,944] Pre-Condition - Step 08: Open Register 'Compare products list' page on footer
+<br><br/>
+[INFO ] [2021-11-02 17:31:38,425] Add_To_Compare_01 - Step 09: Verify Product Information displayed at table
+<br><br/>
+[INFO ] [2021-11-02 17:32:38,530]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:33:38,625]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:33:38,700]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:33:38,758]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:33:38,820]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:33:38,820] Add_To_Compare_01 - Step 10: Click to 'Clear List' button
+<br><br/>
+[INFO ] [2021-11-02 17:33:38,912] Add_To_Compare_01 - Step 11: Verify message is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:33:41,204]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:33:41,204] Add_To_Compare_01 - Step 12: Verify the product Undisplayed
+<br><br/>
+[INFO ] [2021-11-02 17:34:46,276]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:35:21,362]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:35:56,450]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>262</td>
+<td>com.nopcommerce.wishlist.TC_04_Add_To_Compare@65f87a2c</td></tr>
+<tr>
+<td title='com.nopcommerce.myaccount.TC_03_Change_Password.Change_Password_01()'><b>Change_Password_01</b><br>Test class: com.nopcommerce.myaccount.TC_03_Change_Password<br/>
+<a href="#Output-1483203995" onClick='toggleBox("Output-1483203995", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1483203995" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1483203995">
+[INFO ] [2021-11-02 17:37:19,071] Change_Password_01 - Step 01: Open 'My account' page on header
+<br><br/>
+[INFO ] [2021-11-02 17:37:19,518] Change_Password_01 - Step 02: Open 'Change password' form
+<br><br/>
+[INFO ] [2021-11-02 17:37:22,558] Change_Password_01 - Step 03: Enter Old Password information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:22,663] Change_Password_01 - Step 04: Update New Password information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:22,766] Change_Password_01 - Step 05: Update Confirm New Password information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:22,866] Change_Password_01 - Step 06: Click to 'Change Password' button
+<br><br/>
+[INFO ] [2021-11-02 17:37:23,363] Change_Password_01 - Step 07: Verify success message is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:37:23,425]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:23,425] Change_Password_01 - Step 08: Click to 'x' icon
+<br><br/>
+[INFO ] [2021-11-02 17:37:26,688] Change_Password_01 - Step 09: Click to 'Log out' button
+<br><br/>
+[INFO ] [2021-11-02 17:37:29,419] Change_Password_01- Step 10: Click to 'Log in' button
+<br><br/>
+[INFO ] [2021-11-02 17:37:29,864] Change_Password_01 - Step 11: Enter email address to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:29,963] Change_Password_01 - Step 12: Enter old password to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:30,058] Change_Password_01 - Step 13: Click to 'Login' button
+<br><br/>
+[INFO ] [2021-11-02 17:37:30,512] Change_Password_01 - Step 14: Verify error messages is displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:37:30,570]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:30,571] Change_Password_01 - Step 15: Enter email address to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:30,689] Change_Password_01 - Step 16: Enter new password to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:30,807] Change_Password_01 - Step 17: Click to 'Login' button
+<br><br/>
+[INFO ] [2021-11-02 17:37:31,616] Change_Password_01 - Step 18: Verify login success
+<br><br/>
+[INFO ] [2021-11-02 17:37:31,689]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.nopcommerce.myaccount.TC_03_Change_Password@1e886a5b</td></tr>
+<tr>
+<td title='com.nopcommerce.login.TC_01_Login.Login_01_Login_Empty_Data()'><b>Login_01_Login_Empty_Data</b><br>Test class: com.nopcommerce.login.TC_01_Login<br/>
+<a href="#Output-330490124" onClick='toggleBox("Output-330490124", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-330490124" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-330490124">
+[INFO ] [2021-11-02 17:29:17,591] Login_01 - Step 01: Enter empty info to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:17,683] Login_01 - Step 02: Enter empty info to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:17,793] Login_01 - Step 03: Click to 'Login' button
+<br><br/>
+[INFO ] [2021-11-02 17:29:18,088] Login_01 - Step 04: Verify error messages is displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:29:18,156]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.login.TC_01_Login@425357dd</td></tr>
+<tr>
+<td title='com.nopcommerce.login.TC_01_Login.Login_02_Login_Invalid_Email()'><b>Login_02_Login_Invalid_Email</b><br>Test class: com.nopcommerce.login.TC_01_Login<br/>
+<a href="#Output-1251133153" onClick='toggleBox("Output-1251133153", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1251133153" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1251133153">
+[INFO ] [2021-11-02 17:29:18,158] Login_02 - Step 01: Enter invalid email to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:18,252] Login_02 - Step 02: Enter invalid password to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:18,408] Login_02 - Step 03: Click to 'Login' button
+<br><br/>
+[INFO ] [2021-11-02 17:29:18,671] Login_02 - Step 04: Verify error messages is displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:29:18,731]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.login.TC_01_Login@425357dd</td></tr>
+<tr>
+<td title='com.nopcommerce.login.TC_01_Login.Login_03_Login_Not_Register_Email()'><b>Login_03_Login_Not_Register_Email</b><br>Test class: com.nopcommerce.login.TC_01_Login<br/>
+<a href="#Output-929479042" onClick='toggleBox("Output-929479042", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-929479042" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-929479042">
+[INFO ] [2021-11-02 17:29:18,733] Login_03 - Step 01: Enter an unregistered email to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:18,836] Login_03 - Step 02: Enter valid password to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:18,950] Login_03 - Step 03: Click to 'Login' button
+<br><br/>
+[INFO ] [2021-11-02 17:29:19,413] Login_03 - Step 04: Verify error messages is displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:29:19,513]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.login.TC_01_Login@425357dd</td></tr>
+<tr>
+<td title='com.nopcommerce.login.TC_01_Login.Login_04_Empty_Password()'><b>Login_04_Empty_Password</b><br>Test class: com.nopcommerce.login.TC_01_Login<br/>
+<a href="#Output-1364290623" onClick='toggleBox("Output-1364290623", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1364290623" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1364290623">
+[INFO ] [2021-11-02 17:29:19,514] Login_04 - Step 01: Enter valid email to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:19,610] Login_04 - Step 02: Enter empty password to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:19,713] Login_04 - Step 03: Click to 'Login' button
+<br><br/>
+[INFO ] [2021-11-02 17:29:20,129] Login_04 - Step 04: Verify error messages is displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:29:20,194]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.login.TC_01_Login@425357dd</td></tr>
+<tr>
+<td title='com.nopcommerce.login.TC_01_Login.Login_05_Login_Invalid_Password()'><b>Login_05_Login_Invalid_Password</b><br>Test class: com.nopcommerce.login.TC_01_Login<br/>
+<a href="#Output-1510005431" onClick='toggleBox("Output-1510005431", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1510005431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1510005431">
+[INFO ] [2021-11-02 17:29:20,195] Login_05 - Step 01: Enter valid email to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:20,294] Login_05 - Step 02: Enter invalid password to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:20,381] Login_05 - Step 03: Click to 'Login' button
+<br><br/>
+[INFO ] [2021-11-02 17:29:20,828] Login_05 - Step 04: Verify error messages is displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:29:20,917]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.login.TC_01_Login@425357dd</td></tr>
+<tr>
+<td title='com.nopcommerce.login.TC_01_Login.Login_06_Login_Success()'><b>Login_06_Login_Success</b><br>Test class: com.nopcommerce.login.TC_01_Login<br/>
+<a href="#Output-1402892620" onClick='toggleBox("Output-1402892620", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1402892620" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1402892620">
+[INFO ] [2021-11-02 17:29:20,918] Login_06 - Step 01: Enter valid email to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:21,029] Login_06 - Step 02: Enter valid password to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:29:21,163] Login_06 - Step 03: Click to 'Login' button
+<br><br/>
+[INFO ] [2021-11-02 17:29:22,841] Login_06 - Step 04: Verify Logout link is displayed on header
+<br><br/>
+[INFO ] [2021-11-02 17:29:22,919]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.login.TC_01_Login@425357dd</td></tr>
+<tr>
+<td title='com.nopcommerce.myaccount.TC_01_Customer_Info.My_Account_01_Customer_Info()'><b>My_Account_01_Customer_Info</b><br>Test class: com.nopcommerce.myaccount.TC_01_Customer_Info<br/>
+<a href="#Output-1290154431" onClick='toggleBox("Output-1290154431", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1290154431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1290154431">
+[INFO ] [2021-11-02 17:36:40,669] My_Account_01 - Step 01: Open 'My account' page on header
+<br><br/>
+[INFO ] [2021-11-02 17:36:42,038] My_Account_01 - Step 02: Open 'Customer Info' form
+<br><br/>
+[INFO ] [2021-11-02 17:36:45,068] My_Account_01 - Step 03: Update Gender information 'Female' to radio button
+<br><br/>
+[INFO ] [2021-11-02 17:36:45,380] My_Account_01 - Step 04: Update First name information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:36:45,481] My_Account_01 - Step 06: Update Last name information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:36:45,571] My_Account_01 - Step 06: Update Date of birthday information to dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:36:46,532] My_Account_01 - Step 07: Update Email information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:36:46,641] My_Account_01 - Step 08: Update Company name information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:36:46,745] My_Account_01 - Step 09: Click to 'Save' button
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,238] My_Account_01 - Step 10: Verify gender infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,280]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,280] My_Account_01 - Step 11: Verify firstname infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,342]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,342] My_Account_01 - Step 12: Verify lastname infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,406]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,406] My_Account_01 - Step 13: Verify date of birth infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,494]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,568]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,781]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,781] My_Account_01 - Step 14: Verify email infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,843]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,843] My_Account_01 - Step 15: Verify company name infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:36:49,906]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.nopcommerce.myaccount.TC_01_Customer_Info@6ce1f601</td></tr>
+<tr>
+<td title='com.nopcommerce.myaccount.TC_02_Add_Addresses.My_Account_02_Addresses()'><b>My_Account_02_Addresses</b><br>Test class: com.nopcommerce.myaccount.TC_02_Add_Addresses<br/>
+<a href="#Output-1501748610" onClick='toggleBox("Output-1501748610", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1501748610" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1501748610">
+[INFO ] [2021-11-02 17:36:58,750] My_Account_01 - Step 01: Open 'My account' page on header
+<br><br/>
+[INFO ] [2021-11-02 17:37:00,018] My_Account_01 - Step 02: Open 'Addresses' form
+<br><br/>
+[INFO ] [2021-11-02 17:37:03,040] Add_Address_01 - Step 03: Click to 'Add new' button
+<br><br/>
+[INFO ] [2021-11-02 17:37:04,263] Add_Address_01 - Step 04: Update First name information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:04,358] Add_Address_01 - Step 05: Update Last name information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:04,463] Add_Address_01 - Step 06: Update Email information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:04,561] Add_Address_01 - Step 07: Update Company name information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:04,666] Add_Address_01 - Step 08: Update Country name information to dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:37:06,062] Add_Address_01 - Step 09: Update State province information to dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:37:06,172]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:06,173] Add_Address_01 - Step 10: Update Company City name information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:06,263] Add_Address_01 - Step 11: Update Address 1 information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:06,365] Add_Address_01 - Step 12: Update Address 2 information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:06,475] Add_Address_01 - Step 13: Update Zip code information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:06,576] Add_Address_01 - Step 14: Update Phone number information to textbox
+<br><br/>
+[INFO ] [2021-11-02 17:37:06,675] Add_Address_01 - Step 15: Click to 'Save' button
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,484] Add_Address_01 - Step 16: Verify full name infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,533]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,533] Add_Address_01 - Step 17: Verify email infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,581]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,581] Add_Address_01 - Step 18: Verify phone number infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,625]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,626] Add_Address_01 - Step 19: Verify company name infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,705]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,705] Add_Address_01 - Step 20: Verify adress 1 infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,748]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,748] Add_Address_01 - Step 21: Verify adress 2 infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,795]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,795] Add_Address_01 - Step 22: Verify country name infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,843]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,843] Add_Address_01 - Step 23: Verify city state zip infomation is updated successfully
+<br><br/>
+[INFO ] [2021-11-02 17:37:08,888]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.nopcommerce.myaccount.TC_02_Add_Addresses@38875e7d</td></tr>
+<tr>
+<td title='com.nopcommerce.myaccount.TC_04_My_Product_Review.My_Product_Review_01()'><b>My_Product_Review_01</b><br>Test class: com.nopcommerce.myaccount.TC_04_My_Product_Review<br/>
+<a href="#Output-1894503773" onClick='toggleBox("Output-1894503773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1894503773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1894503773">
+[INFO ] [2021-11-02 17:37:38,759] My_Product_Review_01 - Step 01: Open sub menu 'Desktops'
+<br><br/>
+[INFO ] [2021-11-02 17:37:39,516] My_Product_Review_01 - Step 02: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:37:40,488] My_Product_Review_01 - Step 03: Click to 'Add your review' link
+<br><br/>
+[INFO ] [2021-11-02 17:37:46,729] My_Product_Review_01 - Step 04: Enter the review title in the textbox 
+<br><br/>
+[INFO ] [2021-11-02 17:37:46,838] My_Product_Review_01 - Step 05: Enter the review text in the textarea 
+<br><br/>
+[INFO ] [2021-11-02 17:37:46,948] My_Product_Review_01 - Step 05: Click to 'Submit review' button 
+<br><br/>
+[INFO ] [2021-11-02 17:37:48,354] My_Product_Review_01 - Step 06: Verify success message is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:37:48,398]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:48,398] My_Product_Review_01 - Step 07: Open My account page on header
+<br><br/>
+[INFO ] [2021-11-02 17:37:48,863] My_Product_Review_01 - Step 08: Open tab menu 'My product reviews'
+<br><br/>
+[INFO ] [2021-11-02 17:37:48,880] My_Product_Review_01 - Step 09: Verify review is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:37:50,910]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:37:50,970]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.nopcommerce.myaccount.TC_04_My_Product_Review@d816dde</td></tr>
+<tr>
+<td title='com.nopcommerce.register.TC_01_Register.Register_01_Empty_Data()'><b>Register_01_Empty_Data</b><br>Test class: com.nopcommerce.register.TC_01_Register<br/>
+<a href="#Output-230664664" onClick='toggleBox("Output-230664664", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-230664664" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-230664664">
+[INFO ] [2021-11-02 17:28:29,856] Register_01 - Step 01: Enter empty info to 'First Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:29,941] Register_01 - Step 02: Enter empty info to 'Last Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:30,036] Register_01 - Step 03: Enter empty info to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:30,128] Register_01 - Step 04: Enter empty info to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:30,223] Register_01 - Step 05: Enter empty info to 'Confirm Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:30,313] Register_01 - Step 06: Click to 'Register' button
+<br><br/>
+[INFO ] [2021-11-02 17:28:30,605] Register_01 - Step 07: Verify all error messages are displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:28:30,675]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:28:30,737]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:28:30,800]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:28:30,876]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:28:30,938]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.register.TC_01_Register@41382722</td></tr>
+<tr>
+<td title='com.nopcommerce.register.TC_01_Register.Register_02_Invalid_Email()'><b>Register_02_Invalid_Email</b><br>Test class: com.nopcommerce.register.TC_01_Register<br/>
+<a href="#Output-2016909077" onClick='toggleBox("Output-2016909077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2016909077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2016909077">
+[INFO ] [2021-11-02 17:28:30,941] Register_02 - Step 01: Enter valid info to 'First Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:31,047] Register_02 - Step 02: Enter valid info to 'Last Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:31,143] Register_02 - Step 03: Enter invalid info to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:31,246] Register_02 - Step 04: Enter valid info to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:31,354] Register_02 - Step 05: Enter valid info to 'Confirm Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:31,467] Register_02 - Step 06: Click to 'Register' button
+<br><br/>
+[INFO ] [2021-11-02 17:28:31,927] Register_02 - Step 07: Verify email error messages is displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:28:32,011]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.register.TC_01_Register@41382722</td></tr>
+<tr>
+<td title='com.nopcommerce.register.TC_01_Register.Register_03_Valid_Infomation()'><b>Register_03_Valid_Infomation</b><br>Test class: com.nopcommerce.register.TC_01_Register<br/>
+<a href="#Output-1615979304" onClick='toggleBox("Output-1615979304", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1615979304" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1615979304">
+[INFO ] [2021-11-02 17:28:32,012] Register_03 - Step 01: Enter valid info to 'First Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:32,106] Register_03 - Step 02: Enter valid info to 'Last Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:32,195] Register_03 - Step 03: Enter valid info to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:32,295] Register_03 - Step 04: Enter valid info to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:32,405] Register_03 - Step 05: Enter valid info to 'Confirm Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:32,527] Register_03 - Step 06: Click to 'Register' button
+<br><br/>
+[INFO ] [2021-11-02 17:28:34,104] Register_03 - Step 07: Verify success messages is displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:28:34,164]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:28:34,164] Register_03 - Step 08: Open 'Logout' page on header
+<br><br/>
+[INFO ] [2021-11-02 17:28:36,580] Register_03 - Step 09: Open 'Register' page on header
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.nopcommerce.register.TC_01_Register@41382722</td></tr>
+<tr>
+<td title='com.nopcommerce.register.TC_01_Register.Register_04_Exist_Email()'><b>Register_04_Exist_Email</b><br>Test class: com.nopcommerce.register.TC_01_Register<br/>
+<a href="#Output-1623918987" onClick='toggleBox("Output-1623918987", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1623918987" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1623918987">
+[INFO ] [2021-11-02 17:28:37,773] Register_03 - Step 01: Enter valid info to 'First Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:37,873] Register_03 - Step 02: Enter valid info to 'Last Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:37,985] Register_03 - Step 03: Enter an already existing email to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:38,079] Register_03 - Step 04: Enter valid info to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:38,199] Register_03 - Step 05: Enter valid info to 'Confirm Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:38,314] Register_03 - Step 06: Click to 'Register' button
+<br><br/>
+[INFO ] [2021-11-02 17:28:38,759] Register_04 - Step 08: Verify email error messages is displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:28:38,818]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.register.TC_01_Register@41382722</td></tr>
+<tr>
+<td title='com.nopcommerce.register.TC_01_Register.Register_05_InValid_Password()'><b>Register_05_InValid_Password</b><br>Test class: com.nopcommerce.register.TC_01_Register<br>Test method: Password less than 6 chars<br/>
+<a href="#Output-1787732893" onClick='toggleBox("Output-1787732893", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1787732893" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1787732893">
+[INFO ] [2021-11-02 17:28:38,819] Register_03 - Step 01: Enter valid info to 'First Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:38,910] Register_03 - Step 02: Enter valid info to 'Last Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:39,003] Register_03 - Step 03: Enter an already existing email to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:39,104] Register_03 - Step 04: Enter invalid info to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:39,191] Register_03 - Step 05: Enter valid info to 'Confirm Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:39,294] Register_03 - Step 06: Click to 'Register' button
+<br><br/>
+[INFO ] [2021-11-02 17:28:39,577] Register_05 - Step 07: Verify password error messages is displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:28:39,640]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.register.TC_01_Register@41382722</td></tr>
+<tr>
+<td title='com.nopcommerce.register.TC_01_Register.Register_06_Not_Match_Password()'><b>Register_06_Not_Match_Password</b><br>Test class: com.nopcommerce.register.TC_01_Register<br/>
+<a href="#Output-1595379980" onClick='toggleBox("Output-1595379980", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1595379980" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1595379980">
+[INFO ] [2021-11-02 17:28:39,641] Register_03 - Step 01: Enter valid info to 'First Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:39,731] Register_03 - Step 02: Enter valid info to 'Last Name' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:39,824] Register_03 - Step 03: Enter an already existing email to 'Email' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:39,945] Register_03 - Step 04: Enter valid info to 'Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:40,044] Register_03 - Step 05: Enter invalid info to 'Confirm Password' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:28:40,170] Register_03 - Step 06: Click to 'Register' button
+<br><br/>
+[INFO ] [2021-11-02 17:28:40,441] Register_06 - Step 07: Verify confirm password error messages is displayed in mandantory fields
+<br><br/>
+[INFO ] [2021-11-02 17:28:40,530]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.register.TC_01_Register@41382722</td></tr>
+<tr>
+<td title='com.nopcommerce.wishlist.TC_03_Remove_Product.Remove_Product_01()'><b>Remove_Product_01</b><br>Test class: com.nopcommerce.wishlist.TC_03_Remove_Product<br/>
+<a href="#Output-667470429" onClick='toggleBox("Output-667470429", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-667470429" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-667470429">
+[INFO ] [2021-11-02 17:30:01,295] Remove_Product_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>
+[INFO ] [2021-11-02 17:30:04,078] Remove_Product_01 - Step 02: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:30:07,069] Remove_Product_01 - Step 03: Click to 'Add your review' link
+<br><br/>
+[INFO ] [2021-11-02 17:30:07,350] Remove_Product_01 - Step 04: Verify message is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:30:08,223]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:30:08,223] Remove_Product_01 - Step 05: Click to Close icon
+<br><br/>
+[INFO ] [2021-11-02 17:30:10,538] Remove_Product_01 - Step 06: Open 'Wishlist' page on header
+<br><br/>
+[INFO ] [2021-11-02 17:30:12,647] Remove_Product_01 - Step 07: Verify Product Information displayed at table
+<br><br/>
+[INFO ] [2021-11-02 17:30:12,719]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:30:12,719] Remove_Product_01 - Step 08: Click to Remove icon at line '1' 
+<br><br/>
+[INFO ] [2021-11-02 17:30:13,901] Remove_Product_01 - Step 00: Verify message no data in page
+<br><br/>
+[INFO ] [2021-11-02 17:30:13,968]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:30:13,968] Remove_Product_01 - Step 10: Verify shopping cart title is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:31:19,036]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>77</td>
+<td>com.nopcommerce.wishlist.TC_03_Remove_Product@3d4d3fe7</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search_Advanced_Search.Search_01_Empty_Data()'><b>Search_01_Empty_Data</b><br>Test class: com.nopcommerce.search.TC_01_Search_Advanced_Search<br/>
+<a href="#Output-1751667321" onClick='toggleBox("Output-1751667321", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1751667321" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1751667321">
+[INFO ] [2021-11-02 17:38:06,267] Pre-Condition - Step 01: Open Search page on footer
+<br><br/>
+[INFO ] [2021-11-02 17:38:07,873] Search_01 - Step 02: Enter empty data to 'Search keyword' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:38:07,963] Search_01 - Step 03: Click to 'Search' button
+<br><br/>
+[INFO ] [2021-11-02 17:38:12,180] Search_01 - Step 04: Verify error messages is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:38:12,251]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.nopcommerce.search.TC_01_Search_Advanced_Search@6e33c391</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search_Advanced_Search.Search_02_Not_Exist_Data()'><b>Search_02_Not_Exist_Data</b><br>Test class: com.nopcommerce.search.TC_01_Search_Advanced_Search<br/>
+<a href="#Output-2066327010" onClick='toggleBox("Output-2066327010", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2066327010" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2066327010">
+[INFO ] [2021-11-02 17:38:12,252] Searc_02 - Step 01: Enter not exist data to 'Search keyword' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:38:12,347] Searc_02 - Step 02: Click to 'Search' button
+<br><br/>
+[INFO ] [2021-11-02 17:38:12,834] Searcn_02 - Step 03: Verify error messages is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:38:12,897]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.nopcommerce.search.TC_01_Search_Advanced_Search@6e33c391</td></tr>
+<tr>
+<td title='com.nopcommerce.order.TC_01_Add_Product_To_Cart.TC_01_Add_Product_To_Cart()'><b>TC_01_Add_Product_To_Cart</b><br>Test class: com.nopcommerce.order.TC_01_Add_Product_To_Cart<br/>
+<a href="#Output-1051434787" onClick='toggleBox("Output-1051434787", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1051434787" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1051434787">
+[INFO ] [2021-11-02 17:40:45,892] TC_01 - Step 01: Open sub menu 'Desktops'
+<br><br/>
+[INFO ] [2021-11-02 17:40:47,391] TC_01 - Step 02: Click to Product Link
+<br><br/>
+[INFO ] [2021-11-02 17:40:48,454] TC_01 - Step 03: Click to 'Processor' dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:40:48,553] TC_01 - Step 04: Verify item in dropdown is selected
+<br><br/>
+[INFO ] [2021-11-02 17:40:48,639]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:40:48,639] TC_01 - Step 05: Click to 'RAM' dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:40:48,967] TC_01 - Step 06: Verify item in dropdown is selected
+<br><br/>
+[INFO ] [2021-11-02 17:40:49,064]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:40:49,064] TC_01 - Step 07: Click to 'HDD' radio button
+<br><br/>
+[INFO ] [2021-11-02 17:40:49,374] TC_01 - Step 08: Click to 'OS' radio button
+<br><br/>
+[INFO ] [2021-11-02 17:40:49,684] TC_01 - Step 09: Click to 'Microsoft Office [+$50.00]' radio button
+<br><br/>
+[INFO ] [2021-11-02 17:40:49,751] TC_01 - Step 10: Click to 'Acrobat Reader [+$10.00]' radio button
+<br><br/>
+[INFO ] [2021-11-02 17:40:50,061] TC_01 - Step 11: Click to 'Total Commander [+$5.00]' radio button
+<br><br/>
+[INFO ] [2021-11-02 17:40:50,393] TC_01 - Step 12: Click to 'Add to cart' button
+<br><br/>
+[INFO ] [2021-11-02 17:40:51,212] TC_01 - Step 13: Verify message is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:40:51,261]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:40:51,261] TC_01 - Step 14: Click to Close icon
+<br><br/>
+[INFO ] [2021-11-02 17:40:51,550] TC_01 - Step 15: Hover to mini shopping cart on header menu
+<br><br/>
+[INFO ] [2021-11-02 17:40:51,736] TC_01 - Step 16: Verify the infomation of the product displayed in the cart
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,355]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,414]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,475]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,541]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,632]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,694]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,694] TC_01 - Step 17: Get the value of the price unit and parse as float
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,708] TC_01 - Step 17: Get text of element
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,755] TC_01 - Step 16: Verify unit price of the product displayed in the cart
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,818]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,818] TC_01 - Step 16: Verify quantity of the product displayed in the cart
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,880]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,880] TC_01 - Step 16: Verify total price of the product displayed in the cart
+<br><br/>
+[INFO ] [2021-11-02 17:40:52,894]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.nopcommerce.order.TC_01_Add_Product_To_Cart@31c269fd</td></tr>
+<tr>
+<td title='com.nopcommerce.order.TC_05_Checkout_Order_Payment_Method_Card.TC_01_Checkout_Order_Method_Card()'><b>TC_01_Checkout_Order_Method_Card</b><br>Test class: com.nopcommerce.order.TC_05_Checkout_Order_Payment_Method_Card<br/>
+<a href="#Output-230739278" onClick='toggleBox("Output-230739278", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-230739278" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-230739278">
+[INFO ] [2021-11-02 17:43:01,824] TC_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>
+[INFO ] [2021-11-02 17:43:03,589] TC_01 - Step 02: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:43:04,605] TC_01 - Step 03:Click to 'Add to cart' button
+<br><br/>
+[INFO ] [2021-11-02 17:43:05,987] TC_01 - Step 04: Open 'Shopping cart' menu
+<br><br/>
+[INFO ] [2021-11-02 17:43:06,784] TC_01 - Step 05:Click to 'Estimate shipping' button
+<br><br/>
+[INFO ] [2021-11-02 17:43:08,163] TC_01 - Step 06:Select to 'Country name' in dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:43:10,478] TC_01 - Step 06: Select item 'State Province' in dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:43:10,560] TC_01 - Step 06: Verify item in dropdown is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:43:11,038]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:11,038] TC_01 - Step 07: Verify item in dropdown is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:43:11,111]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:11,111] TC_01 - Step 08:Enter to 'Zip Code' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:43:11,217] TC_01 - Step 09:Click to 'Next Day Air' radio button
+<br><br/>
+[INFO ] [2021-11-02 17:43:12,108] TC_01 - Step 10:Click to 'Apply' radio button
+<br><br/>
+[INFO ] [2021-11-02 17:43:12,393] TC_01 - Step 11:Verify the product is displayed in the table
+<br><br/>
+[INFO ] [2021-11-02 17:43:12,453]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:12,453] TC_01 - Step 12:Click to checkbox
+<br><br/>
+[INFO ] [2021-11-02 17:43:12,508] TC_01 - Step 13:Click to 'Check out' button
+<br><br/>
+[INFO ] [2021-11-02 17:43:15,012] TC_01 - Step 14:Uncheck to 'Ship to the same address' checkbox
+<br><br/>
+[INFO ] [2021-11-02 17:43:15,302] TC_01 - Step 15:Select to 'Country name' in dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:43:16,140] TC_01 - Step 16: Verify item in dropdown is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:43:16,231]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:16,231] TC_01 - Step 17:Enter to 'City' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:43:16,343] TC_01 - Step 17:Enter to 'Address1' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:43:16,441] TC_01 - Step 19:Enter to 'Zip code' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:43:16,530] TC_01 - Step 20:Enter to 'Phone number' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:43:16,623] TC_01 - Step 03:Click to 'Continue' button' in 'Billing address' title
+<br><br/>
+[INFO ] [2021-11-02 17:43:16,888] TC_01 - Step 21:Click to 'Continue' button' in 'Shipping addresss' title
+<br><br/>
+[INFO ] [2021-11-02 17:43:19,329] TC_01 - Step 22:Click to 'Next Day Air ($0.00' radio
+<br><br/>
+[INFO ] [2021-11-02 17:43:19,637] TC_01 - Step 23:Click to 'Continue' button' in 'Shipping method' title
+<br><br/>
+[INFO ] [2021-11-02 17:43:20,446] TC_01 - Step 24:Click to 'Credit Card' radio
+<br><br/>
+[INFO ] [2021-11-02 17:43:20,494] TC_01 - Step 25:Click to 'Continue' button' in 'Payment method' title
+<br><br/>
+[INFO ] [2021-11-02 17:43:20,761] TC_01 - Step 26:Get text payment information
+<br><br/>
+[INFO ] [2021-11-02 17:43:20,902]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:20,954]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:20,992]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:21,039]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:21,039] TC_01 - Step 27:Click to 'Continue' button' in 'Payment information' title
+<br><br/>
+[INFO ] [2021-11-02 17:43:21,306] TC_01 - Step 28:Verify the infomation in 'Billing Address' are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,409]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,455]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,501]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,549]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,596]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,642]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,688]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,688] TC_01 - Step 29:Verify the infomation in 'Payment Method' are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,740]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,740] TC_01 - Step30:Verify the infomation in 'Shipping Address' are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,780]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,826]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,874]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,921]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:22,968]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:23,014]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:23,060]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:23,061] TC_01 - Step 31:Verify the infomation in 'Shipping Method' are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:43:23,110]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:43:23,110] TC_01 - Step 32:Verify the product in the table is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:43:23,174]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:23,255]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:23,315]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:23,374]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:23,438]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:23,497]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:23,497] TC_01 - Step 33:Click to 'Confirm' button
+<br><br/>
+[INFO ] [2021-11-02 17:44:24,338] TC_01 - Step 34:Verify success message is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:44:25,441]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:25,441] TC_01 - Step 35:Verify order number value
+<br><br/>
+[INFO ] [2021-11-02 17:44:25,495]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:25,495] TC_01 - Step 36: Open 'Orders' form
+<br><br/>
+[INFO ] [2021-11-02 17:44:29,690] TC_01 - Step 37:Verify order number value with order list value
+<br><br/>
+[INFO ] [2021-11-02 17:44:29,759]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:29,759] TC_01 - Step 38:Click to 'Details' button
+<br><br/>
+[INFO ] [2021-11-02 17:44:30,281] TC_01 - Step 39:Verify text order number is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:44:30,328]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,343] TC_01 - Step 40:Verify the infomation in 'Order Date', 'Order Status', 'Order Total' are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,420]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,472]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,520]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,520] TC_01 - Step 41:Verify the infomation in 'Billing Address' are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,569]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,613]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,660]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,707]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,756]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,802]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,845]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,845] TC_01 - Step 42:Verify the infomation in 'Payment Method' are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,893]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,893] TC_01 - Step 43:Verify the infomation in 'Shipping Address' are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,938]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:33,987]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:34,033]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:34,080]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:34,125]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:34,171]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:34,221]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:34,221] TC_01 - Step 44:Verify the infomation in 'Shipping Method' are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:44:34,287]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:44:34,287] TC_01 - Step 45:Verify the product in the table is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:44:34,373]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>92</td>
+<td>com.nopcommerce.order.TC_05_Checkout_Order_Payment_Method_Card@47747fb9</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC_01_Sort_By_Name_A_Z()'><b>TC_01_Sort_By_Name_A_Z</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging<br/>
+<a href="#Output-92254606" onClick='toggleBox("Output-92254606", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-92254606" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-92254606">
+[INFO ] [2021-11-02 17:38:31,395] Sort_01 - Step 01: Select item in sort dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:38:33,709] Sort_01 - Step 02: Verify product names are sorted in ascending order
+<br><br/>
+[INFO ] [2021-11-02 17:38:33,773]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@6c451c9c</td></tr>
+<tr>
+<td title='com.nopcommerce.order.TC_02_Update_Shopping_Cart.TC_01_Update_Shopping_Cart()'><b>TC_01_Update_Shopping_Cart</b><br>Test class: com.nopcommerce.order.TC_02_Update_Shopping_Cart<br/>
+<a href="#Output-2000969465" onClick='toggleBox("Output-2000969465", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2000969465" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2000969465">
+[INFO ] [2021-11-02 17:42:38,134] TC_02 - Step 01: Open sub menu 'Desktops '
+<br><br/>
+[INFO ] [2021-11-02 17:42:39,617] TC_02 - Step 02: Click to the product link
+<br><br/>
+[INFO ] [2021-11-02 17:42:41,870] TC_02 - Step 03: Click to 'Add to cart'
+<br><br/>
+[INFO ] [2021-11-02 17:42:42,691] TC_02 - Step 04: Open 'Shopping cart' page
+<br><br/>
+[INFO ] [2021-11-02 17:42:44,351] TC_02 - Step 05: Verify the product is displayed in the table
+<br><br/>
+[INFO ] [2021-11-02 17:42:44,426]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:42:44,426] TC_02 - Step 06: Enter to input quantity textbox
+<br><br/>
+[INFO ] [2021-11-02 17:42:47,584] TC_02 - Step 07: Click to 'Update shopping cart' button
+<br><br/>
+[INFO ] [2021-11-02 17:42:51,717] TC_02 - Step 08: Verify the total price is updated
+<br><br/>
+[INFO ] [2021-11-02 17:42:51,824]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.nopcommerce.order.TC_02_Update_Shopping_Cart@372b0d86</td></tr>
+<tr>
+<td title='com.nopcommerce.order.TC_01_Add_Product_To_Cart.TC_02_Edit_Product_To_Cart()'><b>TC_02_Edit_Product_To_Cart</b><br>Test class: com.nopcommerce.order.TC_01_Add_Product_To_Cart<br/>
+<a href="#Output-797872190" onClick='toggleBox("Output-797872190", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-797872190" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-797872190">
+[INFO ] [2021-11-02 17:40:52,895] TC_02 - Step 16: Click to 'Go to cart' button
+<br><br/>
+[INFO ] [2021-11-02 17:40:54,658] TC_02 - Step 16: Click to 'Edit' button in table
+<br><br/>
+[INFO ] [2021-11-02 17:41:01,483] TC_01 - Step 03: Click to 'Processor' dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:41:01,810] TC_01 - Step 04: Verify item in dropdown is selected
+<br><br/>
+[INFO ] [2021-11-02 17:41:01,897]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:01,897] TC_01 - Step 03: Click to 'RAM' dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:41:02,215] TC_01 - Step 04: Verify item in dropdown is selected
+<br><br/>
+[INFO ] [2021-11-02 17:41:02,303]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:02,303] TC_01 - Step 07: Click to 'HDD' radio button
+<br><br/>
+[INFO ] [2021-11-02 17:41:02,588] TC_01 - Step 07: Click to 'OS' radio button
+<br><br/>
+[INFO ] [2021-11-02 17:41:05,935] TC_01 - Step 07: Uncheck to 'Acrobat Reader [+$10.00]' checkbox
+<br><br/>
+[INFO ] [2021-11-02 17:41:09,265] TC_01 - Step 07: Uncheck to 'Total Commander [+$5.00]' checkbox
+<br><br/>
+[INFO ] [2021-11-02 17:41:12,577] TC_01 - Step 07: Enter to quantity textbox
+<br><br/>
+[INFO ] [2021-11-02 17:41:12,692] TC_01 - Step 07: Verify the price is '$1,320.00'
+<br><br/>
+[INFO ] [2021-11-02 17:41:12,737]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:12,737] TC_01 - Step 07:Click to 'Update' button
+<br><br/>
+[INFO ] [2021-11-02 17:41:13,011] Wishlist_01 - Step 04: Verify message is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:41:13,154]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:13,154] Wishlist_01 - Step 05: Click to Close icon
+<br><br/>
+[INFO ] [2021-11-02 17:41:13,448] Wishlist_01 - Step 05: Hover to mini shopping cart
+<br><br/>
+[INFO ] [2021-11-02 17:41:13,630] Wishlist_01 - Step 04: Verify the infomation of the product displayed in the cart
+<br><br/>
+[INFO ] [2021-11-02 17:41:14,817]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:14,879]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:14,942]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:15,004]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:15,066]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:15,132]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:15,133] TC_01 - Step 17: Get the value of the price unit and parse as float
+<br><br/>
+[INFO ] [2021-11-02 17:41:15,146] TC_01 - Step 17: Get text of element
+<br><br/>
+[INFO ] [2021-11-02 17:41:15,190] TC_01 - Step 16: Verify unit price of the product displayed in the cart
+<br><br/>
+[INFO ] [2021-11-02 17:41:15,259]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:15,259] TC_01 - Step 16: Verify quantity of the product displayed in the cart
+<br><br/>
+[INFO ] [2021-11-02 17:41:15,317]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:15,317] TC_01 - Step 16: Verify total price of the product displayed in the cart
+<br><br/>
+[INFO ] [2021-11-02 17:41:15,330]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.nopcommerce.order.TC_01_Add_Product_To_Cart@31c269fd</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC_02_Sort_By_Name_Z_A()'><b>TC_02_Sort_By_Name_Z_A</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging<br/>
+<a href="#Output-514854307" onClick='toggleBox("Output-514854307", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-514854307" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-514854307">
+[INFO ] [2021-11-02 17:38:33,774] Sort_01 - Step 01: Select item in sort dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:38:36,098] Sort_01 - Step 02: Verify product names are sorted in descending order
+<br><br/>
+[INFO ] [2021-11-02 17:38:36,142]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@6c451c9c</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search_Advanced_Search.TC_03_Product_Name_Relative()'><b>TC_03_Product_Name_Relative</b><br>Test class: com.nopcommerce.search.TC_01_Search_Advanced_Search<br/>
+<a href="#Output-2049105300" onClick='toggleBox("Output-2049105300", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2049105300" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2049105300">
+[INFO ] [2021-11-02 17:38:12,899] TC_03 - Step 01: Enter relative data to 'Search keyword' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:38:12,993] TC_03 - Step 02: Click to 'Search' button
+<br><br/>
+[INFO ] [2021-11-02 17:38:14,409] TC_03 - Step 03: Verify 2 product titles are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:38:14,476]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:14,547]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:14,547] TC_03 - Step 04: Get the product size by 2
+<br><br/>
+[INFO ] [2021-11-02 17:38:14,593]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.search.TC_01_Search_Advanced_Search@6e33c391</td></tr>
+<tr>
+<td title='com.nopcommerce.order.TC_01_Add_Product_To_Cart.TC_03_Remove_from_Cart()'><b>TC_03_Remove_from_Cart</b><br>Test class: com.nopcommerce.order.TC_01_Add_Product_To_Cart<br/>
+<a href="#Output-913104568" onClick='toggleBox("Output-913104568", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-913104568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-913104568">
+[INFO ] [2021-11-02 17:41:15,332] TC_02 - Step 16: Click to 'Go to cart' button
+<br><br/>
+[INFO ] [2021-11-02 17:41:16,839] TC_01 - Step 16: Click to 'Remove' button in table
+<br><br/>
+[INFO ] [2021-11-02 17:41:18,153] TC_01 - Step 16: Verify message is displayed 
+<br><br/>
+[INFO ] [2021-11-02 17:41:18,227]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:41:18,227] TC_01 - Step 16: Verify the product in table undisplayed 
+<br><br/>
+[INFO ] [2021-11-02 17:42:23,296]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>67</td>
+<td>com.nopcommerce.order.TC_01_Add_Product_To_Cart@31c269fd</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC_03_Sort_By_Price_Low_To_Hight()'><b>TC_03_Sort_By_Price_Low_To_Hight</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging<br/>
+<a href="#Output-138287471" onClick='toggleBox("Output-138287471", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-138287471" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-138287471">
+[INFO ] [2021-11-02 17:38:36,143] Sort_01 - Step 01: Select item in sort dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:38:38,463] Sort_01 - Step 02: Verify product prices are sorted in descending order
+<br><br/>
+[INFO ] [2021-11-02 17:38:38,539]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@6c451c9c</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search_Advanced_Search.TC_04_Product_Name_Absolute()'><b>TC_04_Product_Name_Absolute</b><br>Test class: com.nopcommerce.search.TC_01_Search_Advanced_Search<br/>
+<a href="#Output-1748314035" onClick='toggleBox("Output-1748314035", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1748314035" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1748314035">
+[INFO ] [2021-11-02 17:38:14,594] TC_04 - Step 01: Enter absolute data to 'Search keyword' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:38:14,694] TC_04 - Step 02: Click to 'Search' button
+<br><br/>
+[INFO ] [2021-11-02 17:38:15,853] TC_04 - Step 03: Verify only one product titles are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:38:15,921]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:15,921] TC_04 - Step 04: Get the product size by 1
+<br><br/>
+[INFO ] [2021-11-02 17:38:15,961]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.nopcommerce.search.TC_01_Search_Advanced_Search@6e33c391</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC_04_Sort_By_Price_Hight_To_Low()'><b>TC_04_Sort_By_Price_Hight_To_Low</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging<br/>
+<a href="#Output-253975773" onClick='toggleBox("Output-253975773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-253975773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-253975773">
+[INFO ] [2021-11-02 17:38:38,541] Sort_01 - Step 01: Select item in sort dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:38:40,856] Sort_01 - Step 02: Verify product prices are sorted in descending order
+<br><br/>
+[INFO ] [2021-11-02 17:38:40,943]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@6c451c9c</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC_05_Display_Three_Per_Page()'><b>TC_05_Display_Three_Per_Page</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging<br/>
+<a href="#Output-658777749" onClick='toggleBox("Output-658777749", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-658777749" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-658777749">
+[INFO ] [2021-11-02 17:38:40,944] TC_05 - Step 01:Select item in dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:38:41,243] TC_05 - Step 02: Verify item is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:41,315]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:44,315] TC_05 - Step 03: Verify product size is only 3 or less than 3 products
+<br><br/>
+[INFO ] [2021-11-02 17:38:44,340]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:44,340] TC_05 - Step 04: Verify the current page is '1'
+<br><br/>
+[INFO ] [2021-11-02 17:38:44,403]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:44,403] TC_05 - Step 05: Verify next icon is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:38:44,464]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@6c451c9c</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search_Advanced_Search.TC_05_Parent_Categories()'><b>TC_05_Parent_Categories</b><br>Test class: com.nopcommerce.search.TC_01_Search_Advanced_Search<br/>
+<a href="#Output-2106989038" onClick='toggleBox("Output-2106989038", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2106989038" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2106989038">
+[INFO ] [2021-11-02 17:38:15,962] TC_05 - Step 01: Enter keyword to 'Search keyword' textbox
+<br><br/>
+[INFO ] [2021-11-02 17:38:16,064] TC_05 - Step 02: Check to 'Advanced Search' checkbox
+<br><br/>
+[INFO ] [2021-11-02 17:38:16,351] TC_05 - Step 03: Verify 'Advanced Search' is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:16,379]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:16,379] TC_05 - Step 04:Select item in dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:38:16,709] TC_05 - Step 05: Verify item is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:16,814]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:16,814] TC_05 - Step 06: Click to 'Search' button
+<br><br/>
+[INFO ] [2021-11-02 17:38:18,412] TC_05 - Step 07: Verify error messages is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:38:18,474]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.search.TC_01_Search_Advanced_Search@6e33c391</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC_06_Display_Six_Per_Page()'><b>TC_06_Display_Six_Per_Page</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging<br/>
+<a href="#Output-341901434" onClick='toggleBox("Output-341901434", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-341901434" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-341901434">
+[INFO ] [2021-11-02 17:38:44,465] TC_06 - Step 01:Select item in dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:38:44,770] TC_06 - Step 02: Verify item is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:44,855]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:47,859] TC_06 - Step 03: Verify product size is only 6 or less than 6 products
+<br><br/>
+[INFO ] [2021-11-02 17:38:47,883]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:47,884] TC_06 - Step 04: Verify Page undispayed
+<br><br/>
+[INFO ] [2021-11-02 17:39:52,956]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>68</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@6c451c9c</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search_Advanced_Search.TC_06_Product_Sub_Categories()'><b>TC_06_Product_Sub_Categories</b><br>Test class: com.nopcommerce.search.TC_01_Search_Advanced_Search<br/>
+<a href="#Output-1811151346" onClick='toggleBox("Output-1811151346", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1811151346" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1811151346">
+[INFO ] [2021-11-02 17:38:18,475] TC_06 - Step 01: Verify textbox is entered 'Apple MacBook Pro' text
+<br><br/>
+[INFO ] [2021-11-02 17:38:18,531]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:18,531] TC_06 - Step 02: Verify 'Advanced Search' is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:18,547]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:18,548] TC_06 - Step 03: Verify item is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:18,629]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:18,629] TC_06 - Step 04: Check to 'Automatically search sub categories' checkbox
+<br><br/>
+[INFO ] [2021-11-02 17:38:18,916] TC_06 - Step 05: Verify 'Automatically search sub categories' is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:18,942]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:18,942] TC_06 - Step 06: Click to 'Search' button
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,556] Login_01 - Step 07: Verify only one product titles are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,619]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,619] Login_01 - Step 08: Get the product size by 1
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,659]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.search.TC_01_Search_Advanced_Search@6e33c391</td></tr>
+<tr>
+<td title='com.nopcommerce.sort.TC_01_Sort_Display_Paging.TC_07_Display_Nine_Per_Page()'><b>TC_07_Display_Nine_Per_Page</b><br>Test class: com.nopcommerce.sort.TC_01_Sort_Display_Paging<br/>
+<a href="#Output-609461666" onClick='toggleBox("Output-609461666", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-609461666" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-609461666">
+[INFO ] [2021-11-02 17:39:52,958] TC_07 - Step 01:Select item in dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:39:53,268] TC_07 - Step 02: Verify item is selected
+<br><br/>
+[INFO ] [2021-11-02 17:39:53,399]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:39:56,407] TC_07 - Step 03: Verify product size is only 9 or less than 9 products
+<br><br/>
+[INFO ] [2021-11-02 17:39:56,432]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:39:56,432] TC_07 - Step 04: Verify Page undispayed
+<br><br/>
+[INFO ] [2021-11-02 17:40:31,507]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.nopcommerce.sort.TC_01_Sort_Display_Paging@6c451c9c</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search_Advanced_Search.TC_07_Incorrect_Manufactuner()'><b>TC_07_Incorrect_Manufactuner</b><br>Test class: com.nopcommerce.search.TC_01_Search_Advanced_Search<br/>
+<a href="#Output-1833840953" onClick='toggleBox("Output-1833840953", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1833840953" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1833840953">
+[INFO ] [2021-11-02 17:38:20,660] TC_07 - Step 01: Verify textbox is entered 'Apple MacBook Pro' text
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,723]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,723] TC_07 - Step 02: Verify 'Advanced Search' is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,739]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,739] TC_07 - Step 03: Verify item is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,823]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,823] TC_07 - Step 04: Check to 'Automatically search sub categories' checkbox
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,861] TC_07 - Step 05: Verify 'Automatically search sub categories' is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,878]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:20,878] TC_07 - Step 06:Select item in dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:38:21,201] TC_07 - Step 07: Verify item is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:21,293]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:21,293] TC_07 - Step 08: Click to 'Search' button
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,155] TC_07 - Step 09: Verify error messages is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,217]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.search.TC_01_Search_Advanced_Search@6e33c391</td></tr>
+<tr>
+<td title='com.nopcommerce.search.TC_01_Search_Advanced_Search.TC_08_Correct_Manufactuner()'><b>TC_08_Correct_Manufactuner</b><br>Test class: com.nopcommerce.search.TC_01_Search_Advanced_Search<br/>
+<a href="#Output-1161848441" onClick='toggleBox("Output-1161848441", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1161848441" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1161848441">
+[INFO ] [2021-11-02 17:38:23,218] TC_08 - Step 01: Verify textbox is entered 'Apple MacBook Pro' text
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,298]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,298] TC_08 - Step 02: Verify 'Advanced Search' is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,308]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,308] TC_08 - Step 03: Verify item is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,424]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,424] TC_08 - Step 04: Check to 'Automatically search sub categories' checkbox
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,488] TC_08 - Step 05: Verify 'Automatically search sub categories' is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,504]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,504] TC_08 - Step 06:Select item in dropdown
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,832] TC_08 - Step 07: Verify item is selected
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,922]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:23,922] TC_08 - Step 08: Click to 'Search' button
+<br><br/>
+[INFO ] [2021-11-02 17:38:25,533] TC_08 - Step 09: Verify only one product titles are displayed
+<br><br/>
+[INFO ] [2021-11-02 17:38:25,597]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:38:25,597] TC_08 - Step 10: Get the product size by 1
+<br><br/>
+[INFO ] [2021-11-02 17:38:25,636]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.nopcommerce.search.TC_01_Search_Advanced_Search@6e33c391</td></tr>
+<tr>
+<td title='com.nopcommerce.wishlist.TC_01_Add_To_Wishlist.Wishlist_01_Add_To_Wishlist()'><b>Wishlist_01_Add_To_Wishlist</b><br>Test class: com.nopcommerce.wishlist.TC_01_Add_To_Wishlist<br/>
+<a href="#Output-1265019171" onClick='toggleBox("Output-1265019171", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1265019171" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1265019171">
+[INFO ] [2021-11-02 17:28:55,475] Wishlist_01 - Step 01: Open sub menu 'Notebooks'
+<br><br/>
+[INFO ] [2021-11-02 17:28:57,173] Wishlist_01 - Step 02: Click to the product title link
+<br><br/>
+[INFO ] [2021-11-02 17:28:59,068] Wishlist_01 - Step 03: Click to 'Add to wishlist' link
+<br><br/>
+[INFO ] [2021-11-02 17:28:59,339] Wishlist_01 - Step 04: Verify message is displayed
+<br><br/>
+[INFO ] [2021-11-02 17:29:00,195]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:29:00,195] Wishlist_01 - Step 05: Click to Close icon
+<br><br/>
+[INFO ] [2021-11-02 17:29:02,500] Wishlist_01 - Step 06: Open 'Wishlist' page on header
+<br><br/>
+[INFO ] [2021-11-02 17:29:03,036] Wishlist_01 - Step 07: Verify Product Information displayed at table
+<br><br/>
+[INFO ] [2021-11-02 17:29:03,097]  -------------------------- PASSED -------------------------- 
+<br><br/>
+[INFO ] [2021-11-02 17:29:03,097] Wishlist_01 - Step 08: Click to 'Your wishlist URL for sharing' link
+<br><br/>
+[INFO ] [2021-11-02 17:29:04,239] Wishlist_01 - Step 09: Verify page title is displayed with firstName and lastName 
+<br><br/>
+[INFO ] [2021-11-02 17:29:04,308]  -------------------------- PASSED -------------------------- 
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.nopcommerce.wishlist.TC_01_Add_To_Wishlist@2102a4d5</td></tr>
+</table><p>
+</body>
+</html>

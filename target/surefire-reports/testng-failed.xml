@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [User_Nop Commerce (0)]">
+  <parameter name="url" value="https://demo.nopcommerce.com/"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="reportConfig.MethodListener"/>
+    <listener class-name="reportConfig.ReportNGListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Run on FIREFOX(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.nopcommerce.order.TC_06_Checkout_Order_Payment_Method_Cheque">
+        <methods>
+          <include name="deleteAllFileInFolder"/>
+          <include name="TC_01_Checkout_Method_Cheque"/>
+          <include name="initBrowser"/>
+          <include name="cleanBrowser"/>
+        </methods>
+      </class> <!-- com.nopcommerce.order.TC_06_Checkout_Order_Payment_Method_Cheque -->
+      <class name="com.nopcommerce.order.TC_07_Re_Order">
+        <methods>
+          <include name="initBrowser"/>
+          <include name="cleanBrowser"/>
+          <include name="TC_01_Re_Order"/>
+          <include name="deleteAllFileInFolder"/>
+        </methods>
+      </class> <!-- com.nopcommerce.order.TC_07_Re_Order -->
+    </classes>
+  </test> <!-- Run on FIREFOX(failed) -->
+</suite> <!-- Failed suite [User_Nop Commerce (0)] -->

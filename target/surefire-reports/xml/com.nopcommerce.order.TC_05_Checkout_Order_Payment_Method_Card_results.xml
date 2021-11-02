@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on FIREFOX"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="92.552">
+  <properties />
+  
+  
+            <testcase name="TC_01_Checkout_Order_Method_Card" time="92.552" classname="com.nopcommerce.order.TC_05_Checkout_Order_Payment_Method_Card" />
+      
+</testsuite>
